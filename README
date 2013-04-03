@@ -5,9 +5,27 @@ This repository contains the main web site dedicated to mod-xslt,
 a module to perform on the flight transformation of xml to html
 (or other formats) using xsl stylesheets.
 
+If you look at the directories in this repository...
+
+... http/ contains the whole site. It is mostly written in .xml,
+using a simplified docbook syntax, named "sdope". You can also
+see the structure of a FAQ, a software archive, and of course
+the menus and the skeleton of the web site is described in xml.
+
+... lib/ contains the stylesheets used to turn all of the above
+documents into html. Each set of stylesheets is mostly self contained
+and has been used on a number of different sites.
+
+  Feel free to use the code of this web site or its content
+as indicated by the original http/main/legals.xml file.
+
+
+Credits
+=======
+
 The content of the site was originally written by Carlo Contavalli,
-ccontavalli@masobit.net, while the graphics were designed by
-Marco Merlin, mmerlin@masobit.net.
+ccontavalli@masobit.net, while the graphics and most of the stylesheets
+were designed by Marco Merlin, mmerlin@masobit.net.
 
 As specified in the original legals.xml file, all the content of
 the website and the website itself are released under the terms
