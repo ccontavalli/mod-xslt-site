@@ -1,0 +1,17 @@
+What is this?
+=============
+
+This repository contains the main web site dedicated to mod-xslt,
+a module to perform on the flight transformation of xml to html
+(or other formats) using xsl stylesheets.
+
+The content of the site was originally written by Carlo Contavalli,
+ccontavalli@masobit.net, while the graphics were designed by
+Marco Merlin, mmerlin@masobit.net.
+
+As specified in the original legals.xml file, all the content of
+the website and the website itself are released under the terms
+of the GNU Free Documentation License and GNU General Public
+License as specified in http/main/legals.xml.
+
+Please refer to that file for more details.
