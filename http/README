@@ -1,0 +1,7 @@
+Adding support for a new document format
+  - add the stylesheet url in css/modules.css
+  - add the xslt in the xslt directory
+  - in xslt/site/ put the xslt that should be
+    used to adapt the standard xslt to be 
+    displayed on the site
+  - import this xslt from xslt/translator.xsl

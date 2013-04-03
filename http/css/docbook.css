@@ -1,0 +1,241 @@
+.sdope {
+  text-align: justify;
+
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-variant: normal;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+}
+
+H1.sdope-title {
+ text-align: left; 
+}
+
+A.sdope-link:LINK {
+  text-decoration: none;
+  color: #000000;
+}
+
+A.sdope-link:HOVER {
+  text-decoration: underline ! important;
+  color: #000000;
+}
+
+A.sdope-link:VISITED {
+  text-decoration: none;
+  color: #000000;
+}
+
+A.sdope-index1:LINK {
+  text-decoration: none;
+  color: #000000;
+}
+
+A.sdope-index1:HOVER {
+  text-decoration: underline ! important;
+  color: #000000;
+}
+
+A.sdope-index1:VISITED {
+  text-decoration: none;
+  color: #000000;
+}
+
+.sdope-abstract {
+  margin-top: 0px;
+  margin-bottom: 10px;
+
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.sdope-sect1 {
+  text-align: justify;
+
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-variant: normal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  font-weight: bold;
+
+  color: #000000;
+
+  margin-top: 0px;
+}
+
+.sdope-sect2 {
+  text-align: justify;
+
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-variant: normal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  font-weight: bold;
+  text-indent: 0px;
+
+  color: #000000;
+
+  margin-top: 0px;
+}
+
+.sdope-sect3 {
+  text-align: justify;
+
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-variant: normal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  font-weight: bold;
+  text-indent: 0px;
+
+  color: #000000;
+
+  margin-top: 0px;
+}
+
+.sdope-sect4 {
+  text-align: justify;
+
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-variant: normal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  font-weight: bold;
+
+  color: #000000;
+
+  margin-top: 0px;
+}
+
+.sdope-sect5 {
+  text-align: justify;
+
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-variant: normal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  font-weight: bold;
+
+  color: #000000;
+
+  margin-top: 0px;
+}
+
+li.sdope-orderedlist {
+  text-indent: 0px;
+  list-style: decimal;
+}
+
+
+.sdope-text1 {
+  text-align: justify;
+
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-variant: normal;
+  font-style: normal;
+  font-weight: normal;
+
+  margin-left: 10px;
+  margin-right: 20px;
+
+  color: #000000;
+}
+
+.sdope-text0 {
+  text-align: justify;
+
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-variant: normal;
+  font-style: normal;
+  font-weight: normal;
+
+  margin-left: 10px; 
+  margin-right: 20px;  
+  margin-top: 0px;
+  padding-top: 0px;
+
+  text-indent: 10px;
+  color: #000000;
+}
+
+.sdope-index1 {
+  text-align: justify;
+
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-variant: normal;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+
+  margin-left: 0px;
+  padding-left: 0px;
+
+  text-indent: 0px;
+}
+
+.sdope-itemizedlist {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  margin-right: 0px;
+
+  padding-top: 0px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-variant: normal;
+  font-style: normal;
+  font-weight: normal;
+
+  text-indent: 0px;
+  text-align: justify;
+  color: #000000;
+}
+
+.sdope-term {
+  text-align: justify;
+
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-variant: normal;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+
+  margin-left: 0px;
+  padding-left: 0px;
+
+  text-indent: 0px;
+}
+
+.sdope-listitem {
+  padding-bottom: 1px;
+
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-variant: normal;
+  font-style: normal;
+  font-weight: normal;
+
+  text-align: justify;
+  color: #000000;
+}

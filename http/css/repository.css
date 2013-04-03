@@ -1,0 +1,179 @@
+/*
+  rep-desc -> description of the whole repository
+  rep-format -> description of an available format
+  rep-arch -> description of an available architecture
+  rep-white -> white link
+  rep-chk???? -> checksum
+  */
+.rep-desc {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  text-align: left;
+  text-indent: 0px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: bold;
+  color: #000000;
+  white-space: nowrap;
+  
+}
+
+.rep-format {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  text-align: left;
+  text-indent: 0px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: bold;
+  color: #000000;
+  white-space: nowrap;
+}
+
+.rep-arch {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  text-align: left;
+  text-indent: 0px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: bold;
+  color: red;
+  white-space: nowrap;
+}
+
+
+.rep-chkmd5 {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  text-align: left;
+  text-indent: 0px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: bold;
+  color: #000000;
+  white-space: nowrap;
+  
+}
+
+.rep-chkpgp {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  text-align: left;
+  text-indent: 0px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: bold;
+  color: blue;
+  white-space: nowrap;
+  
+}
+
+.rep-white {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  text-align: left;
+  text-indent: 0px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: bold;
+  color: #FFFFFF;
+  white-space: nowrap;
+}
+
+A.rep-white:VISITED {
+  text-decoration: none;
+  color: white ! important;
+}
+
+A.rep-white:LINK {
+  text-decoration: none;
+  color: none; 
+}
+
+A.rep-white:HOVER {
+  text-decoration: underline ! important;
+}
+
+.rep-update {
+  white-space: normal;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+ul.rep-change {
+  text-indent: 0px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+li.rep-change {
+  text-indent: 0px;
+  margin: 0 10 0 20;
+  padding: 0 0 0 0;
+}
+
+
+.rep-change-title {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  text-align: left;
+  text-indent: 0px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: bold;
+}
+
+.rep-change-date {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  font-weight: bold;
+  text-indent: 0;
+}
+
+.rep-change-log {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  text-indent: 0px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  font-size: 10px;
+}
+
+.rep-change-author {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  text-indent: 0px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  font-size: 10px;
+  text-align: right;
+}
+
+.rep-sidelink {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  text-align: left;
+  text-indent: 0px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: bold;
+  color: black;
+  white-space: nowrap;
+}
+
+A.rep-sidelink:VISITED {
+  text-decoration: none;
+  color: black ! important;
+}
+
+A.rep-sidelink:LINK {
+  text-decoration: none;
+  color: none; 
+}
+
+A.rep-sidelink:HOVER {
+  text-decoration: underline ! important;
+}

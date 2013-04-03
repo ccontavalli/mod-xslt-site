@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<?modxslt-stylesheet type="text/xsl" method="http" href="${xsltRoot}/translator.xsl" 
+	media="screen and ! $GET[format]" alternate="no" title="For any web browser" charset="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" method="http" href="../../xslt/rep/repository.xsl"
+	media="screen" alternate="no" title="For any web browser" charset="ISO-8859-1"?>
+	
+<article xmlns="http://www.masobit.net/ns/sdope/1.0">
+  <articleinfo>
+    <title>mod-xslt Testing Suite</title>
+    <abstract><para>
+    This page contains the latest snapshots of mod-xslt testing suite,
+    scripts used to perform regression tests over new releases of mod-xslt.
+    </para></abstract>
+  </articleinfo>
+
+<repository xmlns="http://www.masobit.net/ns/repository/1.0">
+  <description>
+    <name>test</name>
+    <maintainer>ccontavalli at masobit.net</maintainer>
+    <link href="http://www.mod-xslt2.com/">Home</link>
+  </description>
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2004020100</base>
+      <date>2004/02/01 01:43:52 CET</date>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2004020100</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="test-2004020100.tar.gz">
+        <checksum type="md5">315f385b58256d158c34f3dc5564007f</checksum>
+        <checksum type="pgp">test-2004020100.tar.gz.asc</checksum>
+      </format>
+
+      <format type="online" name="test-2004020100" />
+    </download>
+  </release>
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2003102300</base>
+      <date>2003/10/23 02:33:32 CET</date>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2003102300</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="test-2003102300.tar.gz">
+        <checksum type="md5">a76ad50d81c69725df1dc60c41ec9fcb</checksum>
+        <checksum type="pgp">test-2003102300.tar.gz.asc</checksum>
+      </format>
+
+      <format type="online" name="test-2003102300" />
+    </download>
+  </release>
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2003101800</base>
+      <date>2003/10/18 03:29:57 CET</date>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2003101800</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="test-2003101800.tar.gz">
+        <checksum type="md5">1efb4f70d925d980025819ce1d887b3c</checksum>
+        <checksum type="pgp">test-2003101800.tar.gz.asc</checksum>
+      </format>
+
+      <format type="online" name="test-2003101800" />
+    </download>
+  </release>
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2003101200</base>
+      <date>2003/10/12 03:37:06 CET</date>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2003101200</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="test-2003101200.tar.gz">
+        <checksum type="md5">1d457cc11efc4d5a2465dfcef15b0c73</checksum>
+        <checksum type="pgp">test-2003101200.tar.gz.asc</checksum>
+      </format>
+
+      <format type="online" name="test-2003101200" />
+    </download>
+  </release>
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2003092700</base>
+      <date>2003/09/27 02:49:18 CET</date>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2003092700</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="test-2003092700.tar.gz">
+        <checksum type="md5">d4244c387fe41b56179920796814dc38</checksum>
+        <checksum type="pgp">test-2003092700.tar.gz.asc</checksum>
+      </format>
+
+      <format type="online" name="test-2003092700" />
+    </download>
+  </release>
+
+<!--
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="http://www.google.com">GPG Public Key</data>
+      <date>2003/10/10 16:45:53</date>
+      <base>../archive/2003042402</base>
+
+      <version type="mmp">
+        <label>release</label>
+        <major>1</major>
+        <minor>2</minor>
+        <patchlevel>23</patchlevel>
+      </version>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+        <ymd>2003042402</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-1.2.23.tar.gz">
+        <checksum type="md5">f237542809ca8df4f4e06d936002c780</checksum>
+        <checksum type="pgp">modxslt-1.2.23.tar.gz.sig</checksum>
+      </format>
+
+      <format type="deb" name="modxslt-1.2.23.deb" arch="i386">
+        <checksum type="md5">f237542809ca8df4f4e06d936002c780</checksum>
+        <checksum type="pgp">http://www.mod-xslt2.com/PGP.key</checksum>
+      </format>
+
+      <format type="rpm" name="modxslt-1.2.23.rpm" arch="i386">
+        <checksum type="md5">f237542809ca8df4f4e06d936002c780</checksum>
+        <checksum type="pgp">http://www.mod-xslt2.com/PGP.key</checksum>
+      </format>
+
+      <package type="src.deb">
+        <format type="diff" name="modxslt-1.2.23.diff" arch="any" />
+	<format type="dsc" name="mdoxslt-1.2.23.dsc" arch="any" />
+      </package>
+    </download>
+
+    <changes>
+      <entry> 
+        <date>2003/12/12 17:43:32</date>
+	<author>ccontavalli</author>
+	<log>Added support for better error handling</log>
+      </entry>
+
+      <entry>
+        <date>2003/12/12 16:43:32</date>
+	<author>ccontavalli</author>
+	<log>Corrected NULL pointer access in mxslt_yy_str_dereference</log>
+      </entry>
+
+      <entry>
+        <date>2003/12/12 16:43:32</date>
+	<author>ccontavalli</author>
+	<log>Applyed patch from Gianni (gcarabelli@masobit.net) to improve
+		expression parsing</log>
+      </entry>
+    </changes>
+
+    <update>
+    Minor bugs corrected and some new features introduced. Update only
+    if you need newer features. No need to update in any other case, unless
+    some of your code is hitting old bugs.
+    </update>
+  </release>
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="http://www.google.com">GPG Public Key</data>
+      <date>2003/10/10 16:45:53</date>
+      <base>../archive/2003021201</base>
+
+      <version type="mmp">
+        <label>release</label>
+        <major>1</major>
+        <minor>2</minor>
+        <patchlevel>22</patchlevel>
+      </version>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+        <ymd>2003021201</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-1.2.23.tar.gz">
+        <checksum type="md5">f237542809ca8df4f4e06d936002c780</checksum>
+        <checksum type="pgp">http://www.mod-xslt2.com/PGP.key</checksum>
+      </format>
+
+      <format type="deb" name="modxslt-1.2.23.deb" arch="i386">
+        <checksum type="md5">f237542809ca8df4f4e06d936002c780</checksum>
+        <checksum type="pgp">http://www.mod-xslt2.com/PGP.key</checksum>
+      </format>
+
+      <format type="rpm" name="modxslt-1.2.23.rpm" arch="i386">
+        <checksum type="md5">f237542809ca8df4f4e06d936002c780</checksum>
+        <checksum type="pgp">http://www.mod-xslt2.com/PGP.key</checksum>
+      </format>
+
+      <package type="src.deb">
+        <format type="diff" name="modxslt-1.2.23.diff" arch="all" />
+	<format type="dsc" name="mdoxslt-1.2.23.dsc" arch="all" />
+      </package>
+    </download>
+
+    <changes>
+      <entry> 
+        <date>2003/12/12 17:43:32</date>
+	<author>ccontavalli</author>
+	<log>Added support for better error handling</log>
+      </entry>
+      <entry>
+        <date>2003/12/12 16:43:32</date>
+	<author>ccontavalli</author>
+	<log>Corrected NULL pointer access in mxslt_yy_str_dereference</log>
+      </entry>
+    </changes>
+
+    <update>
+    Major bugs have been corrected and no new features have been introduced. 
+    If you use older versions of mod-xslt, you should update to this version, 
+    which should completely be backward compatible.
+    </update>
+  </release>
+  -->
+
+</repository>
+</article>

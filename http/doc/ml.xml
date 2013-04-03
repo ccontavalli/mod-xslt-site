@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<?modxslt-stylesheet type="text/xsl" method="http" href="${xsltRoot}/translator.xsl" 
+	media="screen and ! $GET[format]" alternate="no" title="For any web browser" charset="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" method="http" href="xslt/sdope/docbook.xsl"
+	media="screen" alternate="no" title="For any web browser" charset="ISO-8859-1"?>
+	
+<article xmlns="http://www.masobit.net/ns/sdope/1.0">
+
+  <articleinfo>
+    <title>Mailing Lists</title>  
+    <author>
+      <firstname>Carlo</firstname>
+      <surname>Contavalli</surname>
+      <affiliation>
+        <address>
+          <email>ccontavalli at masobit.net</email>
+        </address>
+      </affiliation>
+    </author> 
+
+    <abstract><para>
+    Anyone interested in the development or future of mod-xslt
+    can join the mailing lists.
+    </para></abstract> 
+  </articleinfo>
+
+  <para>                                                 
+  Any question about mod-xslt? Problems using mod-xslt?
+  Would you like to know more about the future of mod-xslt?
+  Or you have any feature you would like in mod-xslt?
+  </para>
+
+  <para>
+  You can join or just post questions on the mod-xslt mailing
+  list.
+  </para>
+
+  <para>
+  The mailing list is currently hosted on google groups:
+  <itemizedlist>
+    <listitem><para>
+    if you have a gmail or other google account, you can
+    subscribe from:</para>
+    <para><bf><ulink url="http://groups.google.com/group/mod-xslt/subscribe" /></bf>.
+    </para></listitem>
+
+    <listitem><para>
+    if you don't have a google account, you can create one for you by
+    visiting:
+    </para><para><bf><ulink url="https://accounts.google.com/NewAccount"/></bf></para>
+    <para>
+    Note
+    that you can create an account and subscribe with your own email address,
+    you don't need gmail. The account is used so you have a username and
+    password to access the web interface, change your settings, or post
+    via web, like any mailman, sympa or listar mailing list.
+    </para></listitem>
+
+    <listitem><para>
+    If you don't want a google account, or prefer to do this over email,
+    you can send an email to: <bf>mod-xslt+subscribe@googlegroups.com</bf>.
+    </para></listitem>
+
+    <listitem><para>
+    To access the web archives, you can visit </para><para><bf><ulink url="http://groups.google.com/group/mod-xslt" /></bf>
+    </para></listitem>
+
+  </itemizedlist>
+
+  </para> 
+
+  <para>
+  To send an email, just write to mod-xslt@googlegroups.com.
+  </para>
+
+  <para>
+  If you want to contribute code, feature, bugfixes, ... the mailing
+  list is also the right place where to start.
+  </para>
+</article>	

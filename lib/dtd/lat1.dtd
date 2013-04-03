@@ -1,0 +1,7 @@
+
+<!ENTITY % cblock "set | condition | event | validator">
+
+<!ENTITY % HTMLlat1 PUBLIC
+	"-//W3C//ENTITIES Latin 1 for XHTML//EN"
+	"xhtml-lat1.ent">
+%HTMLlat1;

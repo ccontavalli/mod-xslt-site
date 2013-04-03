@@ -1,0 +1,15 @@
+* main/download.xml
+* main/cvs.xml
+* main/legals.xml
+- main/snapshots.xml
+- software/releases/index.xml
+- software/snapshots/index.xml
+- software/testing/index.xml
+- software/documentation/index.xml
+- user manuals
+- tips & tricks 
+- standards
+* faq.xml
+
+- far si` che quando sect=all i link alle singole risposte puntino
+  all'interno del documento stesso

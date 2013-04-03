@@ -1,0 +1,90 @@
+BODY.site {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
+TD.site-banner {
+  background-attachment: scroll;
+  background-color: #3366CC;
+  background-image: url(../images/logomodxslt.jpg);
+  background-repeat: no-repeat;
+  vertical-align: bottom;
+  text-align: right;
+  height: 50;
+}
+
+.site-whitelinks {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: bold;
+
+  line-height: 13px;
+  text-align: left;
+
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-position: left top;
+  color: #FFFFFF;
+}
+
+A.site-whitelinks:HOVER {
+  text-decoration: underline ! important;
+}
+
+A.site-whitelinks:LINK { 
+  text-decoration: none; 
+  color: none;
+} 
+
+A.site-whitelinks:VISITED { 
+  text-decoration: none;
+  color: none;
+}
+
+.site-submenu {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  text-align: left;
+  text-indent: 0px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: normal;
+  color: #000000;
+
+  padding-left: 2px;
+}
+
+A.site-submenu:HOVER {
+  text-decoration: underline ! important;
+}
+
+A.site-submenu:LINK { 
+  text-decoration: none; 
+  color: none;
+} 
+
+A.site-submenu:VISITED { 
+  text-decoration: none;
+  color: none;
+}
+
+
+.site-red {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  line-height: 11px;
+  font-weight: bold;
+  font-variant: normal;
+  color: #FF0000;
+}
+
+.site-main {
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: top;
+  text-indent: 10px;
+}

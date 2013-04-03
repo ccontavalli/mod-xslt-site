@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<?modxslt-stylesheet type="text/xsl" method="http" href="${xsltRoot}/translator.xsl" 
+	media="screen and ! $GET[format]" alternate="no" title="For any web browser" charset="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" method="http" href="../../xslt/rep/repository.xsl"
+	media="screen" alternate="no" title="For any web browser" charset="ISO-8859-1"?>
+	
+<article xmlns="http://www.masobit.net/ns/sdope/1.0">
+  <articleinfo>
+    <title>mod-xslt Documentation</title>
+    <abstract><para>
+    This page contains the latest version of mod-xslt documentation
+    in various formats. You can browse the documentation online or download 
+    it on your PC. Keep also in mind that documentation
+    is provided in all .tar.gz packages. You can also browse the <ulink url="download/">whole directory</ulink>.
+    </para></abstract>
+  </articleinfo>
+
+  <para>
+    <variablelist>
+      <varlistentry>
+        <term>mod-xslt -- Users and Administrators Manual (<ulink url="download/manual/manual/">browse online</ulink>)</term>
+	<listitem>
+	<table>
+	  <row>
+	    <content><ulink url="download/manual/manual.xml">manual.xml</ulink>&#160;</content>
+	    <content><ulink url="download/manual/manual.html.tar.gz">manual.html.tar.gz</ulink>&#160;</content>
+	    <content><ulink url="download/manual/manual.pdf">manual.pdf</ulink>&#160;</content>
+	    <content><ulink url="download/manual/manual.txt">manual.txt</ulink>&#160;</content>
+	  </row>
+	  <row>
+	    <content><ulink url="download/manual/manual.ps">manual.ps</ulink>&#160;</content>
+	    <content><ulink url="download/manual/manual.ps.gz">manual.ps.gz</ulink>&#160;</content>
+	    <content><ulink url="download/manual/manual.tex">manual.tex</ulink>&#160;</content>
+	    <content><ulink url="download/manual/manual.rtf">manual.rtf</ulink>&#160;</content>
+	  </row>
+	</table>
+	</listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>mod-xslt -- Frequently Asked Questions (<ulink url="download/faq/faq.html">browse online</ulink>)</term>
+	<listitem>
+	<table>
+	  <row>
+	    <content><ulink url="download/faq/faq.xml">faq.xml</ulink>&#160;</content>
+	    <content><ulink url="download/faq/faq.pdf">faq.pdf</ulink>&#160;</content>
+	    <content><ulink url="download/faq/faq.fo">faq.fo</ulink>&#160;</content>
+	    <content><ulink url="download/faq/faq.ps">faq.ps</ulink>&#160;</content>
+	    <content><ulink url="download/faq/faq.ps.gz">faq.ps.gz</ulink>&#160;</content>
+	  </row>
+	</table>
+	</listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>mod-xslt -- Patches and compatibility info (<ulink url="download/patches/patches/">browse online</ulink>)</term>
+	<listitem>
+	<table>
+	  <row>
+	    <content><ulink url="download/patches/patches.xml">patches.xml</ulink>&#160;</content>
+	    <content><ulink url="download/patches/patches.html.tar.gz">patches.html.tar.gz</ulink>&#160;</content>
+	    <content><ulink url="download/patches/patches.pdf">patches.pdf</ulink>&#160;</content>
+	    <content><ulink url="download/patches/patches.txt">patches.txt</ulink>&#160;</content>
+	  </row>
+	  <row>
+	    <content><ulink url="download/patches/patches.ps">patches.ps</ulink>&#160;</content>
+	    <content><ulink url="download/patches/patches.ps.gz">patches.ps.gz</ulink>&#160;</content>
+	    <content><ulink url="download/patches/patches.tex">patches.tex</ulink>&#160;</content>
+	    <content><ulink url="download/patches/patches.rtf">patches.rtf</ulink>&#160;</content>
+	  </row>
+	</table>
+	</listitem>
+      </varlistentry>
+
+
+    </variablelist>
+  </para>
+
+</article>

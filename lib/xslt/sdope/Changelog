@@ -1,0 +1,8 @@
+- ulink -> se il contenuto e` vuoto, utilizza l'href
+- varlistentry e varlist -> utilizza tabelle anziche' ul li
+- eliminazione sect/sect, sect/sect/sect in favore dell'utilizzo di stylesheet
+  con classe sect0, index0
+- eliminazione dei for nella generazione degli indici
+- chiamata ad index-link per la generazione degli indici
+- utilizzo delle classi nei para
+- divisione singolo docbook.xsl in tanti file
