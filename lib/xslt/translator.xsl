@@ -195,6 +195,8 @@
 
 <xsl:template name="mklink">
   <xsl:param name="class">site-whitelinks</xsl:param>
+  <xsl:param name="href" />
+  <xsl:param name="title" />
 
   <a>
     <xsl:attribute name="class"><xsl:value-of select="$class" /></xsl:attribute>

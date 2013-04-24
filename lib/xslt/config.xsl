@@ -10,10 +10,10 @@
 
   <xsl:param name="graphic.usebars">1</xsl:param>
   
-  <xsl:param name="httpRoot">http://www.mod-xslt2.com</xsl:param>
-  <xsl:param name="fileRoot">/home/http/mod-xslt2.com/http</xsl:param>
-  <xsl:param name="xsltRoot">/home/http/mod-xslt2.com/lib/xslt</xsl:param>
-  <xsl:param name="dtdRoot">/home/http/mod-xslt2.com/lib/dtd</xsl:param>
+  <xsl:param name="httpRoot">http://www.modxslt.org</xsl:param>
+  <xsl:param name="fileRoot">/opt/http/modxslt.org/http</xsl:param>
+  <xsl:param name="xsltRoot">/opt/http/modxslt.org/lib/xslt</xsl:param>
+  <xsl:param name="dtdRoot">/opt/http/modxslt.org/lib/dtd</xsl:param>
 
   <xsl:param name="text.up">| Up |</xsl:param>
   <xsl:param name="text.next">| Next |</xsl:param>

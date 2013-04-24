@@ -1,0 +1,4 @@
+<IfModule modxslt.c>
+  AddOutputFilter mod-xslt xml
+  XSLTParam xsltRoot /opt/http/modxslt.org/lib/xslt
+</IfModule>
