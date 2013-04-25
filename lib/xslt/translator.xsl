@@ -99,18 +99,15 @@
 
     <body class="site"> 
       <table width="760" height="38" border="0" cellpadding="0" cellspacing="0">
-          <!-- First row, containing mod-xslt logo -->
-        <tr><td class="site-banner" /></tr>
-
           <!-- White spacer, between first row and body -->
         <tr><td height="2" /></tr>
 
         <tr><td>
-          <table width="760" height="500" border="0" cellpadding="0" cellspacing="0">
+          <table width="100%" height="500" border="0" cellpadding="0" cellspacing="0">
 
              <!-- black higher bar -->
             <tr><td>
-              <table width="760" height="25%" border="0" cellpadding="0" cellspacing="0">
+              <table width="100%" height="25%" border="0" cellpadding="0" cellspacing="0">
                 <tr valign="middle"> 
                   <td height="20" colspan="3" bgcolor="#000000"> 
                     <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -131,7 +128,7 @@
 
              <!-- Main body -->
             <tr><td>
-              <table width="760" height="460" border="0" cellpadding="0" cellspacing="0">
+              <table width="100%" height="460" border="0" cellpadding="0" cellspacing="0">
                 <tr>
                   <td width="127" valign="top">
 		    <xsl:apply-templates select="s:left" />
@@ -175,7 +172,7 @@
 
               <!-- Black lower bar -->
             <tr><td>
-              <table width="760" height="25%" border="0" cellpadding="0" cellspacing="0">
+              <table width="100%" height="25%" border="0" cellpadding="0" cellspacing="0">
                 <tr valign="middle">
 		<td height="20" colspan="2" bgcolor="#000000" class="site-whitelinks">
                       <xsl:apply-templates select="s:nav[@label='down']" />

@@ -5,16 +5,6 @@ BODY.site {
   margin-bottom: 0px;
 }
 
-TD.site-banner {
-  background-attachment: scroll;
-  background-color: #3366CC;
-  background-image: url(../images/logomodxslt.jpg);
-  background-repeat: no-repeat;
-  vertical-align: bottom;
-  text-align: right;
-  height: 50;
-}
-
 .site-whitelinks {
   font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 11px;
