@@ -13,6 +13,9 @@
 <xsl:template match="faq:copyright" />
 
 <xsl:template name="faq:link-question">
+  <xsl:param name="class" />
+  <xsl:param name="value" />
+
   <a>
     <xsl:attribute name="class"><xsl:value-of select="$class" /></xsl:attribute>
     <xsl:attribute name="href"><mxslt:value-of select="$MODXSLT[httpurl]" />?question=<xsl:value-of select="count(ancestor::*/preceding-sibling::*/descendant-or-self::faq:entry)+1" />&amp;sect=<xsl:value-of select="count(ancestor::faq:sect/preceding-sibling::faq:sect[parent::faq:content])+1" /></xsl:attribute>
@@ -89,6 +92,9 @@
 
 
 <xsl:template name="navbarsect">
+  <xsl:param name="sect" />
+  <xsl:param name="last" />
+
   <xsl:if test="$realDocument/faq:content/faq:sect[position()=$sect - 1]">
     <a class="faq-first">
       <xsl:attribute name="href"><mxslt:value-of select="$MODXSLT[httpurl]" />?sect=1</xsl:attribute>
@@ -187,9 +193,8 @@
   </xsl:if>
 </xsl:template>
 
-
-
 <xsl:template name="showsect">
+  <xsl:param name="sect" />
   <tr><td align="right" valign="top">
 
   <xsl:call-template name="navbarsect">
