@@ -79,22 +79,24 @@
 </xsl:template>
 
 <xsl:template name="index-link">
-<table width="100%" border="0" cellpadding="0" cellspacing="0">
-<tr><td width="1" valign="top">
-  <a>
-    <xsl:attribute name="class"><xsl:value-of select="$class" /></xsl:attribute>
-    <xsl:attribute name="href">
-      <mxslt:value-of select="$MODXSLT[httpurl]" />?sect=<xsl:number level="single" count="/db:article/db:sect|/db:Article/db:sect|/db:article/db:Sect|db:article/db:Sect1|/db:Article/db:Sect|/db:Article/db:Sect1" />#<xsl:number level="multiple" count="db:sect|db:Sect|db:Sect1" /></xsl:attribute>
-    <b><xsl:number level="multiple" count="db:sect|db:Sect|db:Sect1" />&#160;</b>
-  </a></td>
-  <td valign="top"><a>
-    <xsl:attribute name="class"><xsl:value-of select="$class" /></xsl:attribute>
-    <xsl:attribute name="href">
-      <mxslt:value-of select="$MODXSLT[httpurl]" />?sect=<xsl:number level="single" count="/db:article/db:sect|/db:Article/db:sect|/db:article/db:Sect|db:article/db:Sect1|/db:Article/db:Sect|/db:Article/db:Sect1 " />#<xsl:number level="multiple" count="sect" /></xsl:attribute>
-    <xsl:value-of select="db:title/.|db:Title/." />
-  </a>
-</td></tr>
-</table>
+  <xsl:param name="class" />
+
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr><td width="1" valign="top">
+    <a>
+      <xsl:attribute name="class"><xsl:value-of select="$class" /></xsl:attribute>
+      <xsl:attribute name="href">
+        <mxslt:value-of select="$MODXSLT[httpurl]" />?sect=<xsl:number level="single" count="/db:article/db:sect|/db:Article/db:sect|/db:article/db:Sect|db:article/db:Sect1|/db:Article/db:Sect|/db:Article/db:Sect1" />#<xsl:number level="multiple" count="db:sect|db:Sect|db:Sect1" /></xsl:attribute>
+      <b><xsl:number level="multiple" count="db:sect|db:Sect|db:Sect1" />&#160;</b>
+    </a></td>
+    <td valign="top"><a>
+      <xsl:attribute name="class"><xsl:value-of select="$class" /></xsl:attribute>
+      <xsl:attribute name="href">
+        <mxslt:value-of select="$MODXSLT[httpurl]" />?sect=<xsl:number level="single" count="/db:article/db:sect|/db:Article/db:sect|/db:article/db:Sect|db:article/db:Sect1|/db:Article/db:Sect|/db:Article/db:Sect1 " />#<xsl:number level="multiple" count="sect" /></xsl:attribute>
+      <xsl:value-of select="db:title/.|db:Title/." />
+    </a>
+  </td></tr>
+  </table>
 </xsl:template>
 
 <xsl:template match="db:sect|db:Sect|db:Sect1" mode="index">
@@ -117,6 +119,9 @@
 
 
 <xsl:template name="navbar">
+  <xsl:param name="display" />
+  <xsl:param name="last" />
+
   <xsl:if test="$realDocument/db:sect[position()=$display - 1] or $realDocument/db:Sect[position()=$display - 1] or $realDocument/db:Sect1[position()=$display - 1]">
     <a class="sdope-first">
       <xsl:attribute name="href"><mxslt:value-of select="$MODXSLT[httpurl]" />?sect=1</xsl:attribute>
@@ -157,6 +162,9 @@
 </xsl:template>
 
 <xsl:template name="display">
+  <xsl:param name="display" />
+  <xsl:param name="last" />
+
   <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
     <tr><td class="sdope" valign="top">
       <xsl:apply-templates select="$realDocument/db:articleinfo|$realDocument/db:ArticleInfo|$realDocument/db:ArtHeader|$realDocument/db:artheader" />
