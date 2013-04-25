@@ -23,9 +23,7 @@
       <menu position="up" label="home" type="text" title="mod-xslt">
         <submenu title="About mod-xslt2" href="main/about.xml" />
         <submenu title="About this site" href="main/site.xml" />
-        <submenu title="Are using mod-xslt..." href="main/users.xml" />
         <submenu title="Introduction" href="main/intro.xml" />
-<!--        <submenu title="Screenshots" href="main/screenshot.xml" />-->
         <submenu title="Credits" href="main/credits.xml" />
       </menu>
 

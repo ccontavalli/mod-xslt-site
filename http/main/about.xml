@@ -67,8 +67,6 @@
     At time of writing, <bf>mod-xslt2</bf> works with <bf>Apache 1.3</bf>
     and <bf>Apache 2.{0,1,2}</bf>. However, it provides an <bf>API</bf>
     based on an external library that should make it easy to port 
-    <bf>mod-xslt2</bf> to <bf>any other web server</bf>. Work is under way to provide 
-    a <bf>Proxy</bf> translator, a <bf>CGI</bf> handler, and many
-    more features.
+    <bf>mod-xslt2</bf> to <bf>any other web server</bf>.
   </para>
 </article>	
