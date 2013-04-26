@@ -6,9 +6,9 @@
 	
 <article xmlns="http://www.masobit.net/ns/sdope/1.0">
   <articleinfo>
-    <title>mod-xslt Releases</title>
+    <title>mod-xslt -- Older versions</title>
     <abstract><para>
-    This page contains the latest stable versions of mod-xslt. 
+    This page contains old version of mod-xslt snapshots and releases.
     </para></abstract>
   </articleinfo>
 
@@ -18,6 +18,3132 @@
     <maintainer>ccontavalli at masobit.net</maintainer>
     <link href="http://www.mod-xslt2.com/">Home</link>
   </description>
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2008090600</base>
+      <date>2008/09/06 11:09:16 CET</date>
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2008090600</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2008090600.tar.gz">
+        <!-- %CHECKSUMS-2008090600% -->
+        <checksum type="md5">ee609dff67b840bc7923919b9b83f56b</checksum>
+        <checksum type="pgp">modxslt-2008090600.tar.gz.asc</checksum>
+      </format>
+
+      <format type="online" name="modxslt-2008090600" />
+    </download>
+
+    <update>
+A few bug fixes, and updated documentation. New parameter to
+disable the mod-xslt copyright notice at run time, but nothing
+major in this snapshot.
+    </update>
+    <changes>
+
+    <entry>
+      <date>2008/09/6 11:31:56</date>
+      <author>ccontavalli</author>
+      <log>
+        configure, configure.ac - updated automatically by release
+        scripts, in order to prepare a snapshot.
+      </log>
+    </entry>
+    </changes>
+  </release>
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2008080400</base>
+      <date>2008/08/04 00:08:04 CET</date>
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2008080400</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2008080400.tar.gz">
+        <!-- %CHECKSUMS-2008080400% -->
+        <checksum type="md5">af99ab25ebc0de39b31cd0829a9d78c2</checksum>
+        <checksum type="pgp">modxslt-2008080400.tar.gz.asc</checksum>
+      </format>
+
+      <format type="online" name="modxslt-2008080400" />
+    </download>
+
+    <update>
+A lot of bugs corrected. Lot of pending patches have been
+submitted. Should work much more smoothly on non-linux
+systems, with better local:// handling, debugging options, 
+and support for apache 2.x, not just 2.0. This snapshot
+is meant to be short lived: more changes to come in the
+next few days.
+    </update>
+    <changes>
+
+    <entry>
+      <date>2008/08/4 00:26:37</date>
+      <author>ccontavalli</author>
+      <log>
+        tools/snapshot - some recent changes.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2008/08/4 00:26:37</date>
+      <author>ccontavalli</author>
+      <log>
+        tools/library/get-versions - works with recent version
+        of autoconf and the configure files.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2008/08/4 00:26:37</date>
+      <author>ccontavalli</author>
+      <log>
+        tools/data/tla.changelog - split in two files.
+        Fairly pointless, but needed to simplify the snapshot above.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2008/08/4 00:26:37</date>
+      <author>ccontavalli</author>
+      <log>
+        tools/data/tla.descripiton - same as above.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2008/08/3 23:29:08</date>
+      <author>ccontavalli</author>
+      <log>
+        utils/Makefile.in - modified sed regular expression to work
+        with recent versions of autoconf, which seem to add a |#.*#|
+        to variable values.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2008/08/3 21:23:24</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache2/modxslt.c - moved unsetting Content-Length
+        a couple lines further in the code, and added checks
+        for the environment variable 'no-xslt'. This should allow
+        for more flexible usage of mod-xslt (see thread in ml,
+        from a couple months ago).
+      </log>
+    </entry>
+
+    <entry>
+      <date>2008/08/3 21:23:24</date>
+      <author>ccontavalli</author>
+      <log>
+        I wasn't sure if we wanted to have this, as mod-xslt
+        already has *lot* (too many?) mechanisms to enable / disable
+        it on a per document basis. However, SetEnvIf seems to be
+        common practice, by grepping into standard apache modules.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2008/08/3 21:23:24</date>
+      <author>ccontavalli</author>
+      <log>
+        I'm still unsure :) so, if you have any opinion, let me
+        know, and we'll work something out (or just revert this
+        change).
+      </log>
+    </entry>
+
+    <entry>
+      <date>2008/08/3 21:23:24</date>
+      <author>ccontavalli</author>
+      <log>
+        In any case, thanks to &lt;colin at bendell.ca&gt; for providing
+        the patch and raising the issue.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2008/08/3 20:35:25</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/modxslt-debug.c - corrected dumb bug in
+        flags parsing code, and removed a couple warnings.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2008/08/3 20:35:25</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache1/modxslt.c - added configuration
+        file options to set and modify enhanched debug
+        options.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2008/08/3 20:35:25</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache2/modxslt-helpers.c - error handler
+        now caches results and doesn't actually output
+        errors until a \n is outputted by libxslt.
+        This should really improve quality of debug
+        output.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2008/08/3 20:35:25</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache2/modxslt.c - added configuration
+        file options to set and modify enhanched debug
+        options.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2008/08/3 20:35:25</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache2/modxslt.h - added variable in
+        mxslt_ap2_debug_buffer_t, to keep note of
+        data in the buffer.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2008/08/3 20:35:25</date>
+      <author>ccontavalli</author>
+      <log>
+        utils/modxslt-parse.c - improved error output
+        generation.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2008/08/3 20:33:31</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache2/Makefile.in - corrected dumb
+        bug in 'uninstall' target, that broke unistalling
+        mod-xslt2 harder than needed.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2008/08/3 19:50:29</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/modxslt-doc.c - previous CL was not enough.
+        And it seems like I'm a moron. Haven't worked on this
+        code for too long, it seems.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2008/08/3 18:36:01</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/modxslt-doc.c - fixed bug in local:// handling that
+        seldom caused segmentation faults and wrong behaviors.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2008/08/3 18:36:01</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/faq/faq.xml - updated, to clarify description of
+        local://.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2008/08/3 18:36:01</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/faq/xslt/faq-fo.xsl - the world has changed, the .xsl
+        was making recent versions of fop and xsltproc unhappy.
+        Updated the stylesheet.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2008/08/3 18:36:01</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/faq/xslt/faq-html.xsl - same as above.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2008/08/3 18:36:01</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/faq/* - regenerated all the output files.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2007/01/16 06:10:01</date>
+      <author>ccontavalli</author>
+      <log>
+        {arch}/=tagging-method - now ignoring ID files
+        generated by GNU id-utils.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2007/01/16 06:10:01</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/modxslt-debug.c - added functions for 
+        parsing debug strings.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2007/01/16 06:10:01</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/modxslt0/modxslt-debug.h - removed obsolete
+        macro, added doxygen comments, definitions of
+        new functions, and cleaned up a bit debugging 
+        flags.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2007/01/16 06:10:01</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/modxslt0/modxslt-macro.h - str_size and
+        array_size redefined as mxslt_sizeof_array
+        and mxslt_sizeof_str, to avoid conflicts with
+        other header files.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2007/01/16 06:10:01</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/modxslt-libxml.c - updated to use new
+        macro names defined above.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2007/01/16 06:10:01</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/modxslt-doc.c - as above.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2007/01/16 06:10:01</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache1/modxslt.c - as above.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2007/01/16 04:36:48</date>
+      <author>ccontavalli</author>
+      <log>
+        */Makefile.in - added datarootdir=@datarootdir@
+        to avoid warnings during the configure process
+        regarding missing datarootdir.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2007/01/16 03:09:41</date>
+      <author>ccontavalli</author>
+      <log>
+        ChangeLog - added a ChangeLog file generated
+        directly by TLA with all revisions.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2007/01/16 03:09:41</date>
+      <author>ccontavalli</author>
+      <log>
+        */Makefile.in - modified to infer --tag parameter
+        for libtool explicitly. This should fix a long
+        lasting bug with newer autoconf versions.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2007/01/16 03:09:41</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache1/modxslt-helpers.c - added a simple
+        TODO note.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2007/01/16 03:09:41</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache2/modxslt.c - modified to compile
+        with apache 2.2.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2007/01/16 03:09:41</date>
+      <author>ccontavalli</author>
+      <log>
+        aclocal.m4 - updated with more recent autoconf tools.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2007/01/16 03:09:41</date>
+      <author>ccontavalli</author>
+      <log>
+        configure - generated ex-novo.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/09/12 09:07:56</date>
+      <author>ccontavalli</author>
+      <log>
+        tools/ - removed some obsolete and now
+        meaningless files.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/09/12 09:07:56</date>
+      <author>ccontavalli</author>
+      <log>
+        configure.ac - modified to allow name changes
+        in apr-x libraries .. hope this will actually
+        improve things and not worsen them.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/09/12 08:13:54</date>
+      <author>ccontavalli</author>
+      <log>
+        * - MXSLT_DO_DEBUG macro has been removed,
+        in order to allow configuring _run time_ debugging
+        level, to ease the task of finding problems.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/09/12 08:13:54</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/modxslt0/modxslt.h - mxslt_doc_t now uses
+        forward references and typedefs in a saner way.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/09/12 08:13:54</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/modxslt0/modxslt.h - mxslt_doc_init has been
+        changed to allow setting up debugging callbacks.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/09/12 08:13:54</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/modxslt0/modxslt.h - MXSLT_DEBUG macro has
+        been deeply changed and modified.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/09/12 08:13:54</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/modxslt-doc.c - removed mxslt_doc_rec_free,
+        which seems buggy and unused.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/09/12 08:13:54</date>
+      <author>ccontavalli</author>
+      <log>
+        * - removed all references to all macros 
+        MXSLT_DEBUG. They all have been replaced
+        by mxslt_debug_print and mxslt_debug_write.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/09/12 08:13:54</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache1/modxslt-ap1.h - renamed to 
+        modxslt.h
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/09/12 08:13:54</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/modxslt0/ - many header files 
+        have been renamed and split up in
+        multiple files.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/09/12 08:13:54</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache1/ - the dynamic handler now parses
+        both text/xml and application/xml.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/09/12 08:13:54</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache2/ - slight cleanup took place...
+        removed tons of obsolete code.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/07/27 20:23:10</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/modxslt-opr-cmp.c - regular expression escaping code
+        had not been updated to match new escaping rules. A potential
+        bug in previous mod-xslt versions has also been solved.
+        Thanks again to Eric Anderso, &lt;ejona86 at gmail.com&gt;. I
+        now believe I own him a beer.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/07/27 15:32:43</date>
+      <author>ccontavalli</author>
+      <log>
+        tools/* - corrected dumb script in release scripts ...
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/07/27 15:26:12</date>
+      <author>ccontavalli</author>
+      <log>
+        tools/ - corrected a few errors in the
+        release scripts
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/07/27 15:26:12</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/ - generated ex-novo...
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/07/27 15:13:24</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/manual.xml - note tag requires para inside.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/07/27 15:01:16</date>
+      <author>ccontavalli</author>
+      <log>
+        tools/library/ - corrected minor bugs
+        introduced with added support for Update
+        scripts ...
+      </log>
+    </entry>
+    </changes>
+  </release>
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2005072700</base>
+      <date>2005/07/27 15:07:04 CET</date>
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2005072700</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2005072700.tar.gz">
+        <!-- %CHECKSUMS-2005072700% -->
+        <checksum type="md5">79402cf5b7efb5efefd4b118692be4b9</checksum>
+        <checksum type="pgp">modxslt-2005072700.tar.gz.asc</checksum>
+      </format>
+
+      <format type="online" name="modxslt-2005072700" />
+    </download>
+
+    <update>
+A lot of minor bugs were corrected. Update if something
+you need is not working, but watch out: the
+escaping rules of mod-xslt expressions have changed.
+Your media expressions in document that were already 
+working under mod-xslt may not work anymore! Take
+a look to the manual note "Since mod-xslt2 1.3.9", in
+section "Choosing the stylesheet to use / xml-stylesheet 
+and modxslt-stylesheet / Media Expressions / Strings".
+    </update>
+    <changes>
+
+    <entry>
+      <date>2005/07/27 15:32:43</date>
+      <author>ccontavalli</author>
+      <log>
+        tools/* - corrected dumb script in release scripts ...
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/07/27 15:26:12</date>
+      <author>ccontavalli</author>
+      <log>
+        tools/ - corrected a few errors in the
+        release scripts
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/07/27 15:26:12</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/ - generated ex-novo...
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/07/27 15:13:24</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/manual.xml - note tag requires para inside.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/07/27 15:01:16</date>
+      <author>ccontavalli</author>
+      <log>
+        tools/library/ - corrected minor bugs
+        introduced with added support for Update
+        scripts ...
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/07/27 14:48:49</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/modxslt-libxml.c - the exslt ``document'' extension href
+        attribute now uses the path of the current .xml file to calculate
+        relative urls.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/07/27 14:21:03</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/modxslt-doc.c - now tries to look for the media type in
+        imported documents .. this should solve many of the media-type
+        issues, but still ignore many other parameters of the xsl:output
+        parameter.. let's see how it works... seems like libxslt does
+        not perform any xsl:output merging. Current code walks list 
+        of imported documents...
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/07/27 12:50:49</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/* - finally, removed IS_BLANK warning ..
+        its name was clashing with one of libxml2 
+        macros...
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/07/27 12:50:49</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache2 - the code now respects strict aliasing
+        rules, and no more type-punned warnings are issued
+        by gcc...
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/07/27 12:50:49</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/parser/* - corrected a few bugs introduced with
+        previous commit
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/07/26 23:32:07</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/faq.xml - added references to xsl:output 
+        problem, where media-type is ignored from 
+        imported documents. Thanks to 
+        &lt;latypoff at yandex.ru&gt; for reporting this
+        problem.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/07/26 23:32:07</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/modxslt-opr-cmp.c - corrected minor bug
+        that caused wrong error message in case the
+        regular expression was not correct. Thanks
+        to Eric Anderson &lt;ejona86 at gmail.com&gt; for 
+        reporting this problem.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/07/26 23:32:07</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/manual/ - better explained XSLTParam,
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/07/26 23:32:07</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/modxslt-doc.c - mxslt_http_open was not
+        correctly checking for local handlers, causing
+        a segfault under some conditions.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/07/26 23:32:07</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/modxslt-doc.c - mxslt_local_open did not
+        calculate local:// urls correctly when no
+        open method was provided. Thanks to Richar
+        Leopold &lt;mod-xslt2-users at leo.0n3.org&gt;
+        and Eric Anderson &lt;ejona86 at gmail.com&gt;
+        for reporting this problem.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/07/26 23:32:07</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/manual/ - added a few notes about
+        AddOutputFilterByType...
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/07/26 23:32:07</date>
+      <author>ccontavalli</author>
+      <log>
+        tools/ - added support for Update files,
+        so update information need not to be inputted
+        manually at release or snapshot time, allowing
+        them to be written time by time...
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/07/26 23:32:07</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/parser/modxslt-screen-expr.lex - modified
+        in order to change and improve escaping 
+        rules...
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/07/19 13:11:24</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/manual.xml - some examples were split over
+        multiple lines, to ease the task of reading them.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/07/19 13:11:24</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/manual.xml - corrected a few types here 
+        and there, and generally added some useful 
+        notes here and there.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/07/19 13:11:24</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/faq.xml - added a few questions regarding
+        XSLTSetStylesheet and XSLTDefaultStylesheet.
+      </log>
+    </entry>
+    </changes>
+  </release>
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2005071200</base>
+      <date>2005/07/12 10:07:43 CET</date>
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2005071200</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2005071200.tar.gz">
+        <!-- %CHECKSUMS-2005071200% -->
+        <checksum type="md5">8bad8f7b03134f30ea731736cc3b4e38</checksum>
+        <checksum type="pgp">modxslt-2005071200.tar.gz.asc</checksum>
+      </format>
+
+      <format type="online" name="modxslt-2005071200" />
+    </download>
+
+    <update>
+Minor changes in Makefiles. mod-xslt should now be easier
+to install for non root users, and apache2 sapi should be
+install again (in previous snapshot, I forgot a -d parameter
+in one of the Makefiles.
+    </update>
+    <changes>
+
+    <entry>
+      <date>2005/07/12 10:13:08</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache2/Makefile.in - in previous
+        commit, forgot a -d parameter. Thanks
+        to &lt;pacifico at drizzle.com&gt; for pointing
+        that out.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/07/12 10:13:08</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache2/Makefile.in - checks for
+        UID == 0 have now been changed in checks
+        for writeability of destination directory.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/07/12 10:13:08</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/credits.xml - added kudos to Peter
+        Svanber for providing updated patches
+        for libxml and libxslt.
+      </log>
+    </entry>
+    </changes>
+  </release>
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2005052601</base>
+      <date>2005/05/26 14:05:41 CET</date>
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2005052601</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2005052601.tar.gz">
+        <!-- %CHECKSUMS-2005052601% -->
+        <checksum type="md5">230cf27450273fb8ec8132b746016916</checksum>
+        <checksum type="pgp">modxslt-2005052601.tar.gz.asc</checksum>
+      </format>
+
+      <format type="online" name="modxslt-2005052601" />
+    </download>
+
+    <update>
+This version of mod-xslt fixes many portability problems,
+mainly in Makefiles and configure scripts. No other changes
+have been introduced yet, but minor bug fixes. If an older version
+of mod-xslt is working for you, there is no need to upgrade.
+    </update>
+    <changes>
+    </changes>
+  </release>
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2005052600</base>
+      <date>2005/05/26 14:05:25 CET</date>
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2005052600</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2005052600.tar.gz">
+        <!-- %CHECKSUMS-2005052600% -->
+        <checksum type="md5">fe37e2cae123c2eb7bc1215cff3b0d63</checksum>
+        <checksum type="pgp">modxslt-2005052600.tar.gz.asc</checksum>
+      </format>
+
+      <format type="online" name="modxslt-2005052600" />
+    </download>
+
+    <update>
+This version of mod-xslt fixes many portability problems,
+mainly in Makefiles and configure scripts. No other changes
+have been introduced yet, but minor bug fixes. If older version
+of mod-xslt is working for you, there is no need to upgrade.
+    </update>
+    <changes>
+
+    <entry>
+      <date>2005/05/26 14:26:43</date>
+      <author>ccontavalli</author>
+      <log>
+        configure, configure.ac - updated automatically by release
+        scripts, in order to prepare a snapshot.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/05/26 14:26:23</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/faq/faq.xml - updated to include information about
+        MXSLT_DISABLE_SIGNATURE.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/05/26 14:17:12</date>
+      <author>ccontavalli</author>
+      <log>
+        Makefile.in - removed all -D, -g, -o,
+        --mode, --owner, --group usage from every 
+        install call.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/05/26 14:17:12</date>
+      <author>ccontavalli</author>
+      <log>
+        Makefile.in - are now all calling $(INSTALL)
+        instead of install.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/04/19 17:46:52</date>
+      <author>ccontavalli</author>
+      <log>
+        */Makefile.in - some makefiles where incorrectly
+        referencing ``install'' directly, instead of using
+        the $(INSTALL) configure calculated variable.
+        Some Makefiles also use non-standard -D install
+        option. Hope configure will point the $(INSTALL)
+        to the correct location, otherwise that would
+        need to be fixed too.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2005/04/19 17:36:17</date>
+      <author>ccontavalli</author>
+      <log>
+        patches/libxml-2.6.16 - added patches from Peter
+        Svanberg. His original patch has been splitted
+        into two files, like for other libxml versions.
+        It should still work without problems.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/12/18 14:17:38</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache2 - under apache2, mod-xslt was ``prepending''
+        its name to that of apache. ap_append.*version was called
+        too early, while it should have been called in the post
+        config hook. Thanks to &lt;a.ledvinka at promon.cz&gt;
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/12/11 23:15:50</date>
+      <author>ccontavalli</author>
+      <log>
+        - getting ready for starting to work on the 1.4.0 brench
+        of modxslt. The current brench has been renamed into
+        modxslt2--main--1.3, to make it clear what the development
+        line refers to...
+      </log>
+    </entry>
+    </changes>
+  </release>
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2004112100</base>
+      <date>2004/11/21 02:11:29 CET</date>
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2004112100</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2004112100.tar.gz">
+        <!-- %CHECKSUMS-2004112100% -->
+        <checksum type="md5">70a3202883b8eb4330c83a34782073c5</checksum>
+        <checksum type="pgp">modxslt-2004112100.tar.gz.asc</checksum>
+      </format>
+
+      <format type="online" name="modxslt-2004112100" />
+    </download>
+
+    <update>
+Completely backward compatible with previous snapshots.
+Fixes just release and snapshots scripts used by developers.
+    </update>
+    <changes>
+
+    <entry>
+      <date>2004/11/21 02:15:09</date>
+      <author>ccontavalli</author>
+      <log>
+        configure, configure.ac - updated automatically by release
+        scripts, in order to prepare a snapshot.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/11/21 02:05:36</date>
+      <author>ccontavalli</author>
+      <log>
+        tools/ - few more bugs corrected in release and 
+        snapshot scripts.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/11/21 02:00:44</date>
+      <author>ccontavalli</author>
+      <log>
+        configure - regenerated
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/11/21 01:56:03</date>
+      <author>ccontavalli</author>
+      <log>
+        tools/ - snapshot script was not correctly comparing
+        versions, and did not update configure correctly
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/11/14 19:14:22</date>
+      <author>ccontavalli</author>
+      <log>
+        tools/ - updated release &amp; snapshot scripts,
+        they now seems to work correcty
+      </log>
+    </entry>
+    </changes>
+  </release>
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2004111400</base>
+      <date>2004/11/14 18:11:43 CET</date>
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2004111400</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2004111400.tar.gz">
+        <!-- %CHECKSUMS-2004111400% -->
+        <checksum type="md5">a05bbac5ff2205f79c1177a8ade1ba9a</checksum>
+        <checksum type="pgp">modxslt-2004111400.tar.gz.asc</checksum>
+      </format>
+
+      <format type="online" name="modxslt-2004111400" />
+    </download>
+
+    <update>
+Should be backward compatible. Many portability bugs have been corrected.
+XSLTSetStylesheet was wrongly described in the manual. Added some new
+configuration parameters.
+    </update>
+    <changes>
+
+    <entry>
+      <date>2004/11/14 16:13:15</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache2/modxslt-helpers.c - in some cases, a failed
+        load for a given stylesheet caused a segfault. Added
+        handling for MXSLT_SKIP return value.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/11/14 15:31:01</date>
+      <author>ccontavalli</author>
+      <log>
+        tools/ - rewritten all scripts used to release,
+        snapshot and upload mod-xslt. Should be much
+        easyer to use, less error-prone and should
+        generate a Changes file in the main directory.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/11/12 22:39:31</date>
+      <author>ccontavalli</author>
+      <log>
+        utils/Makefile.in - was still generating wrong modxslt-config
+        files. Seems like the grep trick didn't work at all. It felt
+        strange an undocumented feature like that. Now, it has been
+        replaced with a more sane minded sed expression, based on
+        addresses.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/11/12 22:39:31</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/manual - recompiled one more time.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/11/12 22:20:15</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache2/modxslt.c - added XSLTDelRule 
+        parameter support in apache2.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/11/12 22:20:15</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/manual/manual.xml - updated to include documentation
+        about XSLTAddRule and XSLTDelRule.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/11/12 22:20:15</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/manual/ - recompiled, to have all formats updated.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/11/12 22:10:17</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache1 - added the XSLTDelRule parameter,
+        to remove a rule previously set.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/11/12 22:10:17</date>
+      <author>ccontavalli</author>
+      <log>
+        TODO - updated, to include the If-Modified header
+        handling I had all forgot about.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/11/12 21:45:52</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache2 - added support for XSLTDefaultStylesheet
+        parameter and XSLTNoDefaultStylesheet.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/11/12 21:45:52</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache1 - estetic changes to list of apache 
+        parameters
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/11/12 21:45:52</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache2/modxslt.c - mxslt_ap2_out_filter was not
+        returning APR_SUCCESS
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/11/12 21:45:52</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/manual/manual.xml - same changes as for apache1 sapi: corrected
+        XSLTSetStylesheet/XSLTUnSetStylesheet parameters and
+        added XSLTDefaultStylesheet/XSLTNoDefaultStylesheet
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/11/12 21:45:52</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/manual - recompiled, to have all formats
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/11/12 21:44:48</date>
+      <author>ccontavalli</author>
+      <log>
+        utils/Makefile.in - previous commit didn't solve the
+        problem, blame me. Should always check before committing.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/11/12 21:40:25</date>
+      <author>ccontavalli</author>
+      <log>
+        utils/Makefile.in - previous commit that
+        solved compatibility issue with freebsd sed
+        introduced a small bug. Corrected now.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/11/12 21:08:45</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache1/modxslt-helpers.c - in previous commit
+        was not checking if defaultstyle was NULL, potentially
+        causing a segfault.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/11/12 20:56:18</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache1 - Added directive XSLTDefaultStylesheet,
+        to allow users to provide a default stylesheet in 
+        case none can be found, and XSLTNoDefaultStylesheet,
+        to disable a previously defined default stylesheet.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/11/12 20:56:18</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/manual/manual.xml - added new configuration parameters
+        XSLTDefaultStylesheet and XSLTNoDefaultStylesheet to 
+        the manual. 
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/11/12 20:56:18</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/manual/manual.xml - XSLTSetStylesheet were erroneously
+        described as providing those features now provided by
+        XSLTDefaultStylesheet/XSLTNoDefaultStylesheet. Thanks
+        to Adam Souzis.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/11/12 20:56:18</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/manual/ - recompiled for all provided formats.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/11/12 17:05:58</date>
+      <author>ccontavalli</author>
+      <log>
+        utils/Makefile.in - sed expression was not correctly working on
+        FreeBSD. Changed with a grep based expression, couresy of Squeeeez.
+        Thanks to Ryan Moe for reporting the problem.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/11/12 12:53:40</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache2/modxslt-helpers.c - ap_table_elts
+        instead apr_table_elts. Thanks to &lt;giskard at
+        autistici.org&gt;, Dave Carrigan and Adam Souizs.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/11/12 12:50:43</date>
+      <author>ccontavalli</author>
+      <log>
+        configure.ac - now looks into /usr/sbin for apxs. 
+        Thanks to Adam Souzis for reporting problems with
+        Gentoo linux.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/10/28 19:30:29</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache1/ - Makefile was uncorrectly compiling
+        apache module against static version of modxslt
+        library, leading to problems on some architectures
+        like hppa and ia64.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/10/23 03:58:47</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/ - updated as suggested on sourceforge. Main
+        idea is to better document LoadModule parameter
+        and given examples.
+      </log>
+    </entry>
+    </changes>
+  </release>
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2004101700</base>
+      <date>2004/10/17 16:10:44 CET</date>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2004101700</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2004101700.tar.gz">
+        <checksum type="md5">60191d4bfd5e07eef4caa2d542eb19b3</checksum>
+        <checksum type="pgp">modxslt-2004101700.tar.gz.asc</checksum>
+      </format>
+
+      <format type="online" name="modxslt-2004101700" />
+    </download>
+
+    <update>
+Should be backward compatible without problems. Minor changes in the API
+&amp; ABI. Whatch out for the Content-Lenght header handling and chunked encoding,
+which slightly changed.
+    </update>
+    <changes>
+    <entry>
+      <date>2004/10/17 16:19:30</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/faq - added entries for libxslt bug
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/10/17 16:19:30</date>
+      <author>ccontavalli</author>
+      <log>
+        tools - improved release tools
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/10/17 16:19:30</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/manual - recompiled manual
+      </log>
+    </entry>
+    </changes>
+  </release>
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2004101000</base>
+      <date>2004/10/10 21:10:07 CET</date>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2004101000</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2004101000.tar.gz">
+        <checksum type="md5">b90bbabf569aa468188ccbaeede99f00</checksum>
+        <checksum type="pgp">modxslt-2004101000.tar.gz.asc</checksum>
+      </format>
+
+      <format type="online" name="modxslt-2004101000" />
+    </download>
+
+    <update>
+Should be backward compatible. Only some minor changes. Whatch out for problems with
+the keep-alive handling (changed handling of Content-Lenght header)
+    </update>
+    <changes>
+    <entry>
+      <date>2004/10/9 02:51:11</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache*/ - Content-Length header is now
+        unset to try to avoid keepalive problems.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/10/9 02:51:11</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/manual/manual.xml - corrected dumb typo
+        in manual.xml. Is anybody actually reading
+        the site? Why didn't anybody tell me about 
+        the error :&gt;? Let's hide some typos around.
+        Can you find them :? (winner will be cited
+        in the credits)
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/10/2 12:32:29</date>
+      <author>ccontavalli</author>
+      <log>
+        - improved release handling scripts
+      </log>
+    </entry>
+    </changes>
+  </release>
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2004100200</base>
+      <date>2004/10/02 10:10:59 CET</date>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2004100200</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2004100200.tar.gz">
+        <checksum type="md5">8ebd2bc8ffcb555d001e4aad925103ed</checksum>
+        <checksum type="pgp">modxslt-2004100200.tar.gz.asc</checksum>
+      </format>
+
+      <format type="online" name="modxslt-2004100200" />
+    </download>
+
+    <update>
+Many bug fixes, intrduces API incompatible changes
+in the library. Added support for rules in apache
+configuration files. Take a look to the manual.
+    </update>
+    <changes>
+    <entry>
+      <date>2004/10/2 10:30:15</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/parser/*.lex - now handles a conditional parameter
+        which allows flags to be passed to the lex scanner
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/10/2 10:30:15</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/modxslt0/modxslt.h - some prototypes changed 
+        accordingly
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/09/26 22:40:46</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/parser/modxslt-scree-expr.y - after previous
+        change, was not correclty handling errors anymore.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/09/26 22:40:46</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache1 - added more debugging output.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/09/26 18:00:29</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache* - url of the stylesheet specified with XSLTAddRule
+        is evaluated to replace variables.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/09/26 18:00:29</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/manual/manual.xml - updated to include examples of 
+        XSLT parameters usage, included XSLTAddRule.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/09/26 18:00:29</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/faq/faq.xml - updated to explain difference between
+        XSLTAddForce and XSLTAddFilter.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/09/26 02:49:29</date>
+      <author>ccontavalli</author>
+      <log>
+        - removed many obsolete #if 0 comments
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/09/26 02:49:29</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/mxslt_doc_parse_pi - first API and ABI library
+        interface change. style parameter was not used and
+        completely ignored. Removed it from argument list.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/09/26 02:49:29</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/mxslt_doc_parse_pi - does not try to load an
+        external stylesheet any longer if a stylesheet has
+        already been provided by the caller.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/09/26 02:49:29</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/mxslt_doc_parse_pi - caller relied on this
+        function to load any provided stylesheet before
+        attempting to parse pi, but style parameter was
+        completely ignored. XSLTSetStylesheet parameter
+        was thus not working at all, since the change
+        was first introduced. Now, the logic has been
+        moved in the caller.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/09/26 02:49:29</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache1 - added support for XSLTAddRule 
+        parameter.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/09/26 02:49:29</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/parser/modxslt-scree-expr.y - now allows modxslt
+        expressions to be made withut any leading screen and
+        or ``any and ...''. Also, generated .c and .h files 
+        ex-novo.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/09/26 02:49:29</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/api/api.xml - started to document libmodxslt0
+        API and to cleanup its code. I expect the major
+        number to be changed in a couple snapshots. I
+        still consider the API kind of beta, so I'm not
+        worring too much about introducing API/ABI changes.
+        I'm not aware of any external software using this
+        library. If you are, please let me know. I would
+        then start to behave as a good &amp; nice kid.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/09/26 02:49:29</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache1 - updated to conform to new 
+        libmodxslt0 API.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/09/26 02:49:29</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache2 - updated to conform to new
+        libmodxslt0 API.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/09/26 02:49:29</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/manual/manual.xml - updated to include
+        new apache 1/2 parameter.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/09/25 16:06:39</date>
+      <author>ccontavalli</author>
+      <log>
+        Makefile.in, configure.ac, doc/man/Makefile.in - 
+        updated to install manual pages
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/09/25 10:30:41</date>
+      <author>ccontavalli</author>
+      <log>
+        - modified some toplevel readme files to reflect
+        the recently introduced changes.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/09/19 12:17:17</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/ - now `options' are passed over to
+        most of libxml functions. This may introduce
+        backward incompatibilities, since options
+        are no longer left to default values, but
+        should better handle DTD and stuff like
+        that.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/09/18 12:22:00</date>
+      <author>ccontavalli</author>
+      <log>
+        - now, dicts are passed over whenever a 
+        stylesheet gets parsed.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/09/18 11:40:06</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/modxslt-doc.c - was missing some cpp
+        directives to support xinclude
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/09/6 16:37:29</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache2/Makefile.in - added -D parameter to 
+        install. Should solve an error regarding libtool
+        complaining about wrong installation directory.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/09/6 16:34:30</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/modxslt-doc.c - added variables for xinclude
+        support, incremented interface version. Added
+        calls to xmlXIncludeProcess, to process xmlInclude
+        directives.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/09/6 16:34:30</date>
+      <author>ccontavalli</author>
+      <log>
+        configure.ac - added parameter --disable-xinclude.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/09/6 15:14:34</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/modxslt-doc.c - Content-Encoding header was erroneously
+      	set to the document charset. This violated rfc 2616.
+      	I suspect this is the error that caused problems 
+      	to GPRS users who reported problems accessing sites
+      	made with modxslt. Many GPRS providers use data 
+      	compressors (such as nettgain), that rely on the above 
+      	header being correctly set. Internet Explorer users 
+      	were receiving compressed data as plain/html, getting
+      	nice symbols on their own screen.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/09/6 15:05:51</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/man - added manual pages for modxslt commands.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/09/6 15:05:51</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/manual/Makefile - manual directory is not removed
+      	any longer, in order to preserve tla ids.
+      </log>
+    </entry>
+    </changes>
+  </release>
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2004083000</base>
+      <date>2004/08/30 10:08:55 CET</date>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2004083000</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2004083000.tar.gz">
+        <checksum type="md5">8ebd2bc8ffcb555d001e4aad925103ed</checksum>
+        <checksum type="pgp">modxslt-2004083000.tar.gz.asc</checksum>
+      </format>
+
+      <format type="online" name="modxslt-2004083000" />
+    </download>
+
+    <update>
+Should update. Fixes some bugs in apache 1.3 SAPI and apache 2.0 cacheing. Parameters handling (XSLTParam) behavior has changed, due to bugs being corrected. If your code relied on those bugs, the update may be backward incompatible.
+    </update>
+
+    <changes>
+    <entry>
+      <date>2004/08/30 10:35:10</date>
+      <author>ccontavalli</author>
+      <log>
+        configure.ac - updated version number
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/08/30 10:35:10</date>
+      <author>ccontavalli</author>
+      <log>
+        doc - recompiled
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/08/30 10:35:10</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache2 - minor changes to Makefile.in
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/08/30 10:35:10</date>
+      <author>ccontavalli</author>
+      <log>
+        - main purpose of the commit is to verify 
+        the new tla archive works correctly
+      </log>
+    </entry>
+    </changes>
+  </release>
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2004082000</base>
+      <date>2004/08/20 11:08:21 CET</date>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2004082000</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2004082000.tar.gz">
+        <checksum type="md5">cd6b5cf600c24a68355bd0011e765c31</checksum>
+        <checksum type="pgp">modxslt-2004082000.tar.gz.asc</checksum>
+      </format>
+
+      <format type="online" name="modxslt-2004082000" />
+    </download>
+
+    <update>
+Major changes. Corrected bugs in handling configuration parameters. If your setups relyad on those bugs to work, they won't work anymore. Beshide that, should be backward compatible.
+    </update>
+    <changes>
+    <entry>
+      <date>2004/08/20 11:03:50</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache2 - quick hack to disable cacheing
+        of pages, uses f-&gt;r-&gt;no_local_copy, thx to
+        &lt;daniel dot eckl at gmx dot net&gt;, even if he
+        doesn't know.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/08/20 11:03:50</date>
+      <author>ccontavalli</author>
+      <log>
+        makefiles - removed references to NDEBUG. Now
+        assertions are compiled in by default even 
+        in non debugging versions.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/08/18 17:22:16</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/modxslt-doc.c - some variables could have
+        been used uninitialized... error introduced
+        in previous commit.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/08/18 17:22:16</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache* - reverted to ap_overlay_tables.
+        Merging two tables correctly uses a quadratic
+        algorithm, while catenating them is much faster.
+        However, ap_overlay_tables usage has been 
+        corrected in order to make parameters work 
+        correctly.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/08/18 17:22:16</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache2/Makefile.in - corrected error in
+        dependencies. Caused library to be recompiled
+        under certain conditions and missused the 
+        VPATH parameter.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/08/17 12:24:26</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache* - removed calls to ap_overlay_table,
+        replaced with mxslt_ap_merge_tables. Parameters
+        were not correctly merged when abusing of hierarchical
+        relationships to setup xslt parameters. Updated headers
+        accordingly.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/08/17 12:24:26</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache1 - I received a bug report regarding 
+        mod-xslt returning raw .xml under apache1 under 
+        heavy load. Couldn't reproduce the problem, but
+        seems like a locking issues. The only global
+        which may cause the problem I can think of is 
+        mxslt_global_skip_fixup, which, however, is per
+        process and not shared. Added some assertions to
+        verify the correctness of its value anyway, and
+        now fixup handlers are skipped at most once using
+        that variable.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/08/17 12:24:26</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache1 - when using local:// urls, if no
+        temporary directory was defined with XSLTTmpDir, 
+        the request failed.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/08/17 12:24:26</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/faq.xml - updated adding all the new questions
+        that came out on the mailing list. Thanks to all
+        the subscribers!!
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/08/17 12:24:26</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/modxslt-doc.c - local:// relative urls were not 
+        correctly handled under certain conditions.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/08/17 12:24:26</date>
+      <author>ccontavalli</author>
+      <log>
+        lib/modxslt-doc.c - debugging output in 
+        mxlst_load_stylesheet could cause segmentation fault, 
+        since a complex structure was printed as a string.
+      </log>
+    </entry>
+    </changes>
+  </release>
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2004080800</base>
+      <date>2004/08/08 20:08:48 CET</date>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2004080800</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2004080800.tar.gz">
+        <checksum type="md5">8cf98cdaac97c7309fad155a271dcc9a</checksum>
+        <checksum type="pgp">modxslt-2004080800.tar.gz.asc</checksum>
+      </format>
+
+      <format type="online" name="modxslt-2004080800" />
+    </download>
+
+    <update>
+Should update if you want to use apache2 worker mpm. No other changes. Needs some testing.
+    </update>
+    <changes>
+    <entry>
+      <date>2004/08/8 19:56:16</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache2 - ap2_child_init was called
+        by apache2 only when the process forked.
+        The worker mpm forks the process, but each
+        fork runs its own set of threads. However,
+        I need to prepare tsd in every single thread.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/08/8 19:56:16</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache2 - calling ap2_child_init for
+        each thread posed problems in deallocating
+        memory. Memory is now no longer allocated
+        from the server pool, which seems to be
+        shared among threads, but in its own memory
+        area.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/08/8 19:56:16</date>
+      <author>ccontavalli</author>
+      <log>
+        tools - minor changes in upload scripts,
+        corrected some minor bugs
+      </log>
+    </entry>
+    </changes>
+  </release>
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2004080100</base>
+      <date>2004/08/01 18:08:58 CET</date>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2004080100</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2004080100.tar.gz">
+        <checksum type="md5">5d7f607679a1ffb5dad48a93e655e8ff</checksum>
+        <checksum type="pgp">modxslt-2004080100.tar.gz.asc</checksum>
+      </format>
+
+      <format type="online" name="modxslt-2004080100" />
+    </download>
+
+    <update>
+Should update only if using apache2 sapi. No new features have been introduced. Documentation has been sorted out.
+    </update>
+    <changes>
+    <entry>
+      <date>2004/08/1 18:21:53</date>
+      <author>ccontavalli</author>
+      <log>
+        doc - adjusted documentation layout
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/08/1 18:21:53</date>
+      <author>ccontavalli</author>
+      <log>
+        tools - adding scripts to automatically
+        release mod-xslt2
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/07/30 21:12:43</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache2 - configurations were fetched
+        using wrongly - caused segfault during  
+        apache2 load.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/07/30 21:12:43</date>
+      <author>ccontavalli</author>
+      <log>
+        configure - seems like the last time I generated
+        it using the wrong version of autoconf
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/07/30 21:12:43</date>
+      <author>ccontavalli</author>
+      <log>
+        sapi/apache2 - table dumping routine was not
+        working and causing segfaults.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/07/30 21:12:43</date>
+      <author>ccontavalli</author>
+      <log>
+        doc/faq - added xslt stylesheet to generate
+        faq.fo and faq.pdf. Many thanks go to 
+        &lt;mmerlin at masobit.net&gt;
+      </log>
+    </entry>
+    </changes>
+  </release>
+
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2004072600</base>
+      <date>2004/07/26 01:13:24 CET</date>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2004072600</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2004072600.tar.gz">
+        <checksum type="md5">0e64d538e14c4cf75d7a5ba932fb0322</checksum>
+        <checksum type="pgp">modxslt-2004072600.tar.gz.asc</checksum>
+      </format>
+
+      <format type="online" name="modxslt-2004072600" />
+    </download>
+
+    <update>
+    Should update. It is backward compatible, and fixes some bugs
+    in the apache1 sapi. apache2 sapi is now working and documented.
+    No new features have been introduced.
+    </update>
+
+    <changes>
+
+    <entry>
+      <date>2004/07/25 23:40:45</date>
+      <author>ccontavalli</author>
+      <log>
+      doc/manual - updated apache2 documentation
+      </log>
+    </entry> 
+
+    <entry>
+      <date>2004/07/25 23:40:45</date>
+      <author>ccontavalli</author>
+      <log>
+      README - updated
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/07/25 23:40:45</date>
+      <author>ccontavalli</author>
+      <log>
+      configure.ac - updated to point to new
+      documentation files
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/07/25 02:13:23</date>
+      <author>ccontavalli</author>
+      <log>
+      sapi/apache2 - wrong brigade was passed over
+      to parser, causing only the last brigade of
+      multiple brigades pages to be parsed. This
+      caused problems to php.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/07/25 02:13:23</date>
+      <author>ccontavalli</author>
+      <log>
+      sapi/apache2 - mxslt_ap2_file_parse was still
+      checking for MXSLT_SKIP after mxslt_doc_parse_pi,
+      which does not exist anymore.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/07/25 02:13:23</date>
+      <author>ccontavalli</author>
+      <log>
+      sapi/apache2 - handling of redirects and non
+      200 statuses now works correctly.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/07/24 23:30:12</date>
+      <author>ccontavalli</author>
+      <log>
+      sapi/apache2 - still have problems with php4
+      compiled as a handler if the output is not
+      valid xml: php closes the connection instead
+      of sending the correct page for the status (500)
+      returned by mod-xslt. Is this my problem or
+      php's? According to php-4.3.8/sapi/apache2handler/
+      sapi_apache2.c and subsequent lines, I don't have
+      many chances to fix this... unless I take care
+      ov everything... what about apache2 compiled
+      as a filter? How does it work?
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/07/24 23:30:12</date>
+      <author>ccontavalli</author>
+      <log>
+      lib/modxslt0/modxslt.h - well, it's been a long
+      time since last change in the library... here,
+      I just undef some constants so apache2 code doesn't
+      complain about variables being redefined.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/07/24 23:30:12</date>
+      <author>ccontavalli</author>
+      <log>
+      sapi/apache1/Makefile - Added quotes around install
+      and clean directory. Do they have any use? does it
+      really work with directories containing ' 's?
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/07/24 23:30:12</date>
+      <author>ccontavalli</author>
+      <log>
+      sapi/apache2/Makefile - Makefile clean target now works
+      correctly (it is using the libtool --clean as
+      it should have done).
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/07/24 23:30:12</date>
+      <author>ccontavalli</author>
+      <log>
+      sapi/apache2/Makefile - Updated to use new library
+      version and to actually get a compiled version of
+      the module.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/07/24 04:56:59</date>
+      <author>ccontavalli</author>
+      <log>
+      sapi/apache2 - now it really compiles cleanly.
+      Corrected some dumb errors, API updates and so
+      on...
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/07/24 04:56:59</date>
+      <author>ccontavalli</author>
+      <log>
+      lib/modxslt0/modxslt.h - added a couple prototypes
+      for functions I believe I never wrote but are
+      in my own source files.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/07/24 04:56:59</date>
+      <author>ccontavalli</author>
+      <log>
+      sapi/apache2 - nconf->params was not initialized
+      at all, causing a segfault.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/07/24 04:56:59</date>
+      <author>ccontavalli</author>
+      <log>
+      sapi/apache1/ - buffers were not correctly updated
+      after subrequests. This leaded to other apache components
+      to think that either data was still available to be
+      read in the buffer or to wait for the client to send
+      more data.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/07/24 04:56:59</date>
+      <author>ccontavalli</author>
+      <log>
+      sapi/apache1/ - in case a ``strange'' status (!= HTTP_OK)
+      was returned by the sub request handler, apache was calling
+      a function (ap_die?) to discard the body of the request.
+      This combined with the error above, caused correct behavior
+      for each request that filled a single buffer (&lt; 4k),
+      since the buffer was left where it was (even if data was
+      already read) and ap_die had the chance to correctly
+      discard the body.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/07/24 04:56:59</date>
+      <author>ccontavalli</author>
+      <log>
+      - the two above corrections fixed a long standing bug
+      with post requests and KeepAlive handling. Many thanks
+      go to Andrea Ciancone, who provided a test case that
+      blocked apache on each request.
+      </log>
+    </entry>
+
+    <entry>
+      <date>2004/07/24 04:56:59</date>
+      <author>ccontavalli</author>
+      <log>
+      Makefile.in - the Makefile was incorrectly trying to
+      compile/tidy documentation, even if it is already
+      included in the package.
+      </log>
+    </entry>
+    </changes>
+  </release>
+
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2004071400</base>
+      <date>2004/07/14 12:24:13 CET</date>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2004071400</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2004071400.tar.gz">
+        <checksum type="md5">fda69a559fe6b38fc28290023bd85337  </checksum>
+        <checksum type="pgp">modxslt-2004071400.tar.gz.asc</checksum>
+      </format>
+
+      <format type="online" name="modxslt-2004071400" />
+    </download>
+
+    <update>
+    Should update. It is backward compatible, and fixes some bad problems
+    and some minor problems. No new features have been introduced.
+    </update>
+
+    <changes>
+      <entry> 
+        <date>2004/07/12 02:14:43</date>
+	<author>ccontavalli</author>
+	<log>Archived moved to GNU Arch (tla). No more CVS.</log>
+      </entry>
+
+      <entry>
+        <date>2004/07/12 02:14:43</date>
+	<author>ccontavalli</author>
+	<log>Documentation has been cleaned up, sorted, and included
+	   in the tarball</log>
+      </entry>
+
+      <entry>
+        <date>2004/07/12 02:14:43</date>
+	<author>ccontavalli</author>
+	<log>Now, documentation is available in _many_ formats</log>
+      </entry>
+
+      <entry>
+        <date>2004/07/10 03:21:58</date>
+	<author>ccontavalli</author>
+	<log>Makefiles have been adjusted and cleaned up</log>
+      </entry>
+      <entry>
+        <date>2004/07/08 00:14:02</date>
+	<author>ccontavalli</author>
+	<log>libtool has been updated, and its script
+	  have been synced with this latest version.
+	  This should solve the missing .so extension
+	  problem. Thanks to Scott Jame Remnant, who
+	  helped me a lot even if he doesn't know :)</log>
+      </entry>
+      <entry>
+        <date>2004/07/07 03:12:24</date>
+	<author>ccontavalli</author>
+	<log>Makefiles now honor the DESTDIR environment
+	   variable. There is no mnore --prefix hack.</log>
+      </entry>
+      <entry>
+        <date>2004/07/07 03:12:24</date>
+	<author>ccontavalli</author>
+	<log>sapi/apache1 - sometimes temporary file did not
+	  get removed. This was due to mxslt_ap1_merge_dir_config
+	  that did not merge the configuration for the unlink
+	  variable.</log>
+      </entry>
+    </changes>
+  </release>
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2004060500</base>
+      <date>2004/06/05 22:13:02 CET</date>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2004060500</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2004060500.tar.gz">
+        <checksum type="md5">711f2ab9379f5af6b2ef0c0c47e3320e  </checksum>
+        <checksum type="pgp">modxslt-2004060500.tar.gz.asc</checksum>
+      </format>
+
+      <format type="online" name="modxslt-2004060500" />
+    </download>
+
+    <update>
+    Third public release. Should update. Minor bug corrected
+    in handling apache 1.3 requests.
+    </update>
+
+    <changes>
+      <entry> 
+        <date>2004/06/02 03:23:45</date>
+	<author>ccontavalli</author>
+	<log>Corrected bug in handling redirects (sapi apache1). Small
+	     redirects weren't correctly flushed, leaving the request
+	     in an undefined state.</log>
+      </entry>
+
+      <entry>
+        <date>2004/06/04 02:12:04</date>
+	<author>ccontavalli</author>
+	<log>Now, the apache2 code compiles again. However, I wouldn't recomend
+	     it for _any_ use. Deadlock detection code was cut out. I don't have
+	     the time to finish it right now.</log>
+      </entry>
+
+      <entry>
+        <date>2004/06/03 04:04:13</date>
+	<author>ccontavalli</author>
+	<log>Cleaned up documentation a bit.</log>
+      </entry>
+    </changes>
+  </release>
+
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2004041900</base>
+      <date>2004/04/19 03:21:05 CET</date>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2004041900</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2004041900.tar.gz">
+        <checksum type="md5">67953b7b218a580209b5ab0786b18f97</checksum>
+        <checksum type="pgp">modxslt-2004041900.tar.gz.asc</checksum>
+      </format>
+
+      <format type="online" name="modxslt-2004041900" />
+    </download>
+
+    <update>
+    Second public release. No need to update. No bugs corrected,
+    no new features introduced.
+    </update>
+
+    <changes>
+      <entry> 
+        <date>2004/04/12 12:48:36</date>
+	<author>ccontavalli</author>
+	<log>Corrected clean target in utils Makefile.</log>
+      </entry>
+
+      <entry>
+        <date>2004/04/08 01:43:26</date>
+	<author>ccontavalli</author>
+	<log>Few updates to the apache2 codebase. Still need to complete
+	     few functions before it will be usable again under apache2.</log>
+      </entry>
+    </changes>
+  </release>
+
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2004020100</base>
+      <date>2004/02/01 01:43:52 CET</date>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2004020100</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2004020100.tar.gz">
+        <checksum type="md5">35e63c0ee4a374cd9c4a732dbff998f2</checksum>
+        <checksum type="pgp">modxslt-2004020100.tar.gz.asc</checksum>
+      </format>
+
+      <format type="online" name="modxslt-2004020100" />
+    </download>
+
+    <update>
+    First public release. Update from any previous version. Should be 
+    backward compatible with itself.
+    </update>
+
+    <changes>
+      <entry> 
+        <date>2003/12/27 03:52:07</date>
+	<author>ccontavalli</author>
+	<log>Corrected dumb NULL pointer dereference in loop handling code.</log>
+      </entry>
+
+      <entry>
+        <date>2003/12/26 01:14:14</date>
+	<author>ccontavalli</author>
+	<log>Corrected dumb NULL pointer dereference in variable substitution code.</log>
+      </entry>
+    </changes>
+  </release>
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2003102300</base>
+      <date>2003/10/23 02:10:12 CET</date>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2003102300</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2003102300.tar.gz">
+        <checksum type="md5">27dffd85dba05f5002f797d8e3aae50a</checksum>
+        <checksum type="pgp">modxslt-2003102300.tar.gz.asc</checksum>
+      </format>
+
+      <format type="online" name="modxslt-2003102300" />
+    </download>
+
+    <update>
+    For beta testers only. Not backward compatible.
+    </update>
+
+    <changes>
+      <entry> 
+        <date>2003/10/22 23:54:57</date>
+	<author>ccontavalli</author>
+	<log>New loop detection code based on virtual hosts, remote and local URLs.</log>
+      </entry>
+
+      <entry>
+        <date>2003/10/23 1:12:24</date>
+	<author>ccontavalli</author>
+	<log>Corrected error management code. Updated so each message outputs a terminating '\n'.</log>
+      </entry>
+    </changes>
+  </release>
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2003101800</base>
+      <date>2003/10/18 01:43:56 CET</date>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2003101800</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2003101800.tar.gz">
+        <checksum type="md5">06bab376d6b8749348937ebdf2ba2930</checksum>
+        <checksum type="pgp">modxslt-2003101800.tar.gz.asc</checksum>
+      </format>
+
+      <format type="online" name="modxslt-2003101800" />
+    </download>
+
+    <update>
+    For beta testers only. Not backward compatible.
+    </update>
+  </release>
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2003101200</base>
+      <date>2003/10/12 04:01:47 CET</date>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2003101200</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2003101200.tar.gz">
+        <checksum type="md5">d4711e7683f07048de614f32e3543425</checksum>
+        <checksum type="pgp">modxslt-2003101200.tar.gz.asc</checksum>
+      </format>
+      <format type="online" name="modxslt-2003101200" />
+    </download>
+
+    <update>
+    For beta testers only. Not backward compatible.
+    </update>
+
+    <changes>
+      <entry> 
+        <date>2003/10/11 20:14:57</date>
+	<author>ccontavalli</author>
+	<log>Updated configure script. It now builds the library and the SAPI.</log>
+      </entry>
+
+      <entry>
+        <date>2003/10/11 21:09:13</date>
+	<author>ccontavalli</author>
+	<log>Directory structure completely modified. There is now complete separation
+	  between the SAPI and the mod-xslt library. Everything has been updated to use
+	  libtool.</log>
+      </entry>
+      <entry>
+        <date>2003/09/03 3:24:48</date>
+	<author>ccontavalli</author>
+	<log>Completely rewrote the bison parser.</log>
+      </entry>
+    </changes>
+  </release>
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2003092700</base>
+      <date>2003/09/27 04:01:47 CET</date>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2003092700</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2003092700.tar.gz">
+        <checksum type="md5">1100ac03a64d2c0f90aacd17a6fc6e16</checksum>
+        <checksum type="pgp">modxslt-2003092700.tar.gz.asc</checksum>
+      </format>
+      <format type="online" name="modxslt-2003092700" />
+    </download>
+
+    <update>
+    For beta testers only. Not backward compatible.
+    </update>
+  </release>
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2003092400</base>
+      <date>2003/09/24 04:01:47 CET</date>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2003092400</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2003092400.tar.gz">
+        <checksum type="md5">170efa04415645dd434cd1843890f298</checksum>
+        <checksum type="pgp">modxslt-2003092400.tar.gz.asc</checksum>
+      </format>
+      <format type="online" name="modxslt-2003092400" />
+    </download>
+
+    <update>
+    For beta testers only. Not backward compatible.
+    </update>
+  </release>
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2003090700</base>
+      <date>2003/09/07 05:17:35 CET</date>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2003090700</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2003090700.tar.gz">
+        <checksum type="md5">58c40ddc9f74dfa5f106a5528d27949e</checksum>
+        <checksum type="pgp">modxslt-2003090700.tar.gz.asc</checksum>
+      </format>
+      <format type="online" name="modxslt-2003090700" />
+    </download>
+
+    <update>
+    For beta testers only. Not backward compatible.
+    </update>
+  </release>
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2003090600</base>
+      <date>2003/09/06 05:13:22 CET</date>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2003090600</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2003090600.tar.gz">
+        <checksum type="md5">a6b399b25e1c3120d488aad257eb2b72</checksum>
+        <checksum type="pgp">modxslt-2003090600.tar.gz.asc</checksum>
+      </format>
+      <format type="online" name="modxslt-2003090600" />
+    </download>
+
+    <update>
+    For beta testers only. Not backward compatible.
+    </update>
+  </release>
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2003090500</base>
+      <date>2003/09/05 04:56:59 CET</date>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2003090500</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2003090500.tar.gz">
+        <checksum type="md5">9dcc2ec24dccedffc229e5adc2e2f922</checksum>
+        <checksum type="pgp">modxslt-2003090500.tar.gz.asc</checksum>
+      </format>
+      <format type="online" name="modxslt-2003090500" />
+    </download>
+
+    <update>
+    For beta testers only. Not backward compatible.
+    </update>
+  </release>
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2003090400</base>
+      <date>2003/09/04 05:27:49 CET</date>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2003090400</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2003090400.tar.gz">
+        <checksum type="md5">ca6fb0c9b32eba07c2c3107b6a338ce9</checksum>
+        <checksum type="pgp">modxslt-2003090400.tar.gz.asc</checksum>
+      </format>
+      <format type="online" name="modxslt-2003090400" />
+    </download>
+
+    <update>
+    For beta testers only. Not backward compatible.
+    </update>
+
+    <changes>
+      <entry> 
+        <date>2003/09/03 19:47:34</date>
+	<author>ccontavalli</author>
+	<log>Improved configure script</log>
+      </entry>
+
+      <entry>
+        <date>2003/09/03 21:13:07</date>
+	<author>ccontavalli</author>
+	<log>Makefiles have been updated</log>
+      </entry>
+      <entry>
+        <date>2003/09/03 23:21:38</date>
+	<author>ccontavalli</author>
+	<log>Tests now compile</log>
+      </entry>
+    </changes>
+  </release>
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2003090100</base>
+      <date>2003/09/01 03:23:45 CET</date>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2003090100</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2003090100.tar.gz">
+        <checksum type="md5">4262c9de69ae98a6b2ef7d618b29b316</checksum>
+        <checksum type="pgp">modxslt-2003090100.tar.gz.asc</checksum>
+      </format>
+      <format type="online" name="modxslt-2003090100" />
+    </download>
+
+    <update>
+    For beta testers only. Not backward compatible.
+    </update>
+  </release>
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2003083000</base>
+      <date>2003/08/30 07:13:36 CET</date>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2003083000</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2003083000.tar.gz">
+        <checksum type="md5">fa85c302213cc9ee0672b402478ae176</checksum>
+        <checksum type="pgp">modxslt-2003083000.tar.gz.asc</checksum>
+      </format>
+      <format type="online" name="modxslt-2003083000" />
+    </download>
+
+    <update>
+    For beta testers only. Not backward compatible.
+    </update>
+  </release>
+
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2003082900</base>
+      <date>2003/08/24 04:05:24 CET</date>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2003082900</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2003082900.tar.gz">
+        <checksum type="md5">3fa3f6fbeae837a79e854885703dde9e</checksum>
+        <checksum type="pgp">modxslt-2003082900.tar.gz.asc</checksum>
+      </format>
+      <format type="online" name="modxslt-2003082900" />
+    </download>
+
+    <update>
+    For beta testers only. Not backward compatible.
+    </update>
+
+    <changes>
+      <entry> 
+        <date>2003/08/28 21:45:54</date>
+	<author>ccontavalli</author>
+	<log>Better handling of libxml incompatibilities in configure</log>
+      </entry>
+
+      <entry>
+        <date>2003/08/28 22:57:01</date>
+	<author>ccontavalli</author>
+	<log>Now parses variables and local:// urls</log>
+      </entry>
+      <entry>
+        <date>2003/08/28 23:13:38</date>
+	<author>ccontavalli</author>
+	<log>FAQ has been updated</log>
+      </entry>
+      <entry>
+        <date>2003/08/29 0:01:23</date>
+	<author>ccontavalli</author>
+	<log>Parameters are now completely handled using internal
+	  hashing tables</log>
+      </entry>
+      <entry>
+        <date>2003/08/29 0:47:39</date>
+	<author>ccontavalli</author>
+	<log>Rewrote parser Makefile</log>
+      </entry>
+      <entry>
+        <date>2003/08/29 1:54:59</date>
+	<author>ccontavalli</author>
+	<log>Many updates in bison grammar</log>
+      </entry>
+    </changes>
+  </release>
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2003082500</base>
+      <date>2003/08/25 07:13:36 CET</date>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2003082500</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2003082500.tar.gz">
+        <checksum type="md5">46b9230570af1700344c92be3d32d08e</checksum>
+        <checksum type="pgp">modxslt-2003082500.tar.gz.asc</checksum>
+      </format>
+      <format type="online" name="modxslt-2003082500" />
+    </download>
+
+    <update>
+    For beta testers only. Not backward compatible.
+    </update>
+  </release>
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2003082401</base>
+      <date>2003/08/24 05:47:46 CET</date>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2003082401</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2003082401.tar.gz">
+        <checksum type="md5">4a30f8d9be16363129984535270eb5f7</checksum>
+        <checksum type="pgp">modxslt-2003082401.tar.gz.asc</checksum>
+      </format>
+      <format type="online" name="modxslt-2003082401" />
+    </download>
+
+    <update>
+    For beta testers only. Not backward compatible.
+    </update>
+  </release>
+
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2003082400</base>
+      <date>2003/08/24 03:12:10 CET</date>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2003082400</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2003082400.tar.gz">
+        <checksum type="md5">884c97c1b5ea9fbc249695d1d963e7e1</checksum>
+        <checksum type="pgp">modxslt-2003082400.tar.gz.asc</checksum>
+      </format>
+      <format type="online" name="modxslt-2003082400" />
+    </download>
+
+    <update>
+    For beta testers only. Not backward compatible.
+    </update>
+
+    <changes>
+      <entry> 
+        <date>2003/08/23 23:12:45</date>
+	<author>ccontavalli</author>
+	<log>Cleaned up table handling headers</log>
+      </entry>
+      <entry>
+        <date>2003/08/24 2:23:37</date>
+	<author>ccontavalli</author>
+	<log>Better memory management in routines handling mod-xslt grammar</log>
+      </entry>
+    </changes>
+  </release>
+
+  <release>
+    <description>
+      <maintainer>ccontavalli</maintainer>
+      <data href="./GPG.key">GPG Public Key</data>
+      <base>./archive/2003082300</base>
+      <date>2003/08/23 04:37:29 CET</date>
+
+      <version type="ymd">
+        <label>cvs-snapshot</label>
+	<ymd>2003082300</ymd>
+      </version>
+    </description>
+
+    <download>
+      <format type="tar.gz" name="modxslt-2003082300.tar.gz">
+        <checksum type="md5">4e6e66b22982e429be4a0cd06546ea20</checksum>
+        <checksum type="pgp">modxslt-2003082300.tar.gz.asc</checksum>
+      </format>
+      <format type="online" name="modxslt-2003082300" />
+    </download>
+
+    <update>
+    First release of new mod-xslt code, after the whole rewrite. For beta testers only.
+    It is not backward compatible.
+    </update>
+
+  </release>
+
+
   <release>
     <description>
       <maintainer>ccontavalli</maintainer>

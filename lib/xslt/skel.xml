@@ -14,7 +14,6 @@
 
     <nav label="down">
       <link title="Legal" href="main/legals.xml" />
-      <!-- <link title="Terms of use" href="main/terms.xml" /> -->
 
       <copyright>2003 Marco Merlin and Carlo Contavalli. All Rights Reserved.</copyright>
     </nav>
@@ -23,7 +22,6 @@
       <menu position="up" label="home" type="text" title="mod-xslt">
         <submenu title="About mod-xslt2" href="main/about.xml" />
         <submenu title="About this site" href="main/site.xml" />
-        <submenu title="Introduction" href="main/intro.xml" />
         <submenu title="Credits" href="main/credits.xml" />
       </menu>
 
@@ -35,7 +33,6 @@
       <menu position="up" label="download" type="text" title="Download"> 
         <submenu title="Releases (github)" href="http://github.com/ccontavalli/mod-xslt/tags" />
         <submenu title="Old Versions" href="software/releases.xml" />
-<!--        <submenu title="TLA (CVS) snapshots" href="software/snapshots.xml" /> -->
         <submenu title="Testing Suite" href="software/testing.xml" />
 	<submenu title="Documentation" href="doc/documentation.xml" /> 
       </menu>
@@ -43,15 +40,13 @@
       <menu position="up" label="cvs" type="text" title="Development">
         <submenu title="Browse GIT (github)" href="http://github.com/ccontavalli/mod-xslt" /> 
         <submenu title="Report Bugs (github)" href="http://github.com/ccontavalli/mod-xslt/issues" />
-        <submenu title="Wiki (github)" href="http://github.com/ccontavalli/mod-xslt/wiki" />
       </menu>
 
       <menu position="up" label="doc" type="text" title="Documentation">
         <submenu title="User Manual" href="doc/manual.xml" />
         <submenu title="Frequently Asked Questions" href="doc/faq.xml" />
 	<submenu title="Standards" href="main/standards.xml" />
-<!--	<submenu title="Tips &amp; Tricks" href="doc/tips/" /> -->
-<!--	<submenu title="Development" href="main/todo.xml" /> -->
+        <submenu title="Wiki (github)" href="http://github.com/ccontavalli/mod-xslt/wiki" />
       </menu>
 
   </left>
