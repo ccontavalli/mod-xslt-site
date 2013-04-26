@@ -137,8 +137,11 @@
 </xsl:template>
 
 <xsl:template name="navbarquestion">
-<!--   First: <xsl:value-of select="$first" /><br />
-   Last: <xsl:value-of select="$last" /><br />  -->
+  <xsl:param name="first" />
+  <xsl:param name="question" />
+  <xsl:param name="sect" />
+  <xsl:param name="last" />
+
   <xsl:if test="$first &lt; $question"> 
     <a class="faq-index">
       <xsl:attribute name="href">
@@ -223,6 +226,7 @@
 
 <xsl:template name="showquestion">
   <xsl:param name="sect"><mxslt:value-of select="$GET[sect]" /></xsl:param>
+  <xsl:param name="question" />
 
   <xsl:param name="first" select="$question - count(/descendant::faq:entry[position()=$question]/preceding-sibling::*)" />
   <xsl:param name="last" select="$question + count(/descendant::faq:entry[position()=$question]/following-sibling::*)" />

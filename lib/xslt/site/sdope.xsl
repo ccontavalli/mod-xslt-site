@@ -61,21 +61,7 @@
 <!-- Inizio index destra -->
 
 <xsl:template name="sideindex">
-<!--  <table width="100%" border="0" height="10"><tr><td></td></tr></table>
-  <table width="95%" align="right" border="0" bgcolor="#000000" cellspacing="0" cellpadding="1">
-    <tr><td>
-      <table width="100%" border="0" bgcolor="#FFFFFF" cellspacing="0" cellpadding="0">
-        <tr><td>
-          <table width="95%" align="center" border="0" cellspacing="0" cellpadding="0">
-            <tr><td> -->
-	    <hr />
-              <xsl:apply-templates select="$realDocument/db:sect|$realDocument/db:Sect|$realDocument/db:Sect1" mode="index" />
-<!--            </td></tr>
-         </table>
-       </td></tr>
-      </table>
-    </td></tr>
-  </table> -->
+  <xsl:apply-templates select="$realDocument/db:sect|$realDocument/db:Sect|$realDocument/db:Sect1" mode="index" />
 </xsl:template>
 
 <xsl:template name="index-link">
