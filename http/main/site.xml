@@ -37,37 +37,25 @@
   </articleinfo>
 
   <para>                                                 
-    This whole site is a proof of concept of mod-xslt usage.
-    It was written entirely in .xml + .xsl by using mod-xslt 
-    features. 
+    This site is a proof of concept of mod-xslt usage.
+    It has been entirely written in .xml + .xsl and is being 
+    served by apache using mod-xslt.
   </para> 
 
   <para>
-    In the future, we would like to release the .xml and .xsl
-    files we used as a generalized way to build up internet
-    sites, as a raw and simple version of a Content Management
-    System. 
+    All the .xsl files and .xml files are released under GPL.
+    You can download them from:
+    <ulink url="https://github.com/ccontavalli/mod-xslt-site" />
   </para>
 
   <para>
-    However, lot of works still needs to be done, both to cleanup 
-    the code, to make it easyer to customize
-    and to add support for more features (like php scripts to modify
-    the layout of menus and boxes). If you like it and would like to 
-    help us out, just let us know (write to the mailing lists or contact
-    one of the authors, either Marco Merlin or Carlo Contavalli).
+    Feel free to use the mailing list if you have questions, or
+    to modify and use those templates as you see fit.
   </para>
 
   <para>
-    All the .xsl files and .xml files are released under GPL, so,
-    if you want to test them out or take a look at them before
-    they are released, drop us a mail. They will be made available
-    on this site as soon as they are completed.
-  </para>
-
-  <para>
-    At time of writing, the stylesheets we wrote have been used
-    for a couple other sites:
+    Over the past few years, this set of templates was used to
+    build several sites, some of which are:
   </para>
   <para>
     <itemizedlist>
@@ -75,7 +63,5 @@
     <listitem><bf><ulink url="http://www.mod-xslt2.com" /></bf><para>mod-xslt2 web site</para></listitem>
     <listitem><bf><ulink url="http://www.pigeonair.net" /></bf><para>Pigeonair Mail System</para></listitem>
     </itemizedlist>
-    If you want to use them for your own site, or you want your site
-    to be listed here, just let us know.
   </para>
 </article>	
