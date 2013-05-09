@@ -40,30 +40,30 @@
   </para> 
 
   <para>
-    <bf>mod-xslt2</bf> is able to:
+    <bf>mod-xslt</bf> can:
     <itemizedlist>
-      <listitem>parse <bf>dynamically generated xml</bf> provided by cgi 
-        scripts or server side languages, like <bf>perl</bf> or <bf>php</bf>.</listitem>
-      <listitem>use a <bf>full featured language</bf> based on PIs to choose 
-      	which stylesheet to use, language that can make use of
-	headers provided by the client, <bf>GET</bf> parameters and
-	<bf>regular expressions</bf></listitem>
-      <listitem>parse external <bf>DTDs</bf> and use the defaults therein 
-      	provided</listitem>
+      <listitem>transform <bf>dynamically generated xml</bf>, like the
+        output of <bf>perl</bf>, <bf>php</bf> or <bf>cgi</bf> scripts.</listitem>
+      <listitem>allows you to specify which xsl stylesheet to use based
+        on &lt;?xml-stylesheet statements.</listitem>
+      <listitem>provides many extension to access client <bf>headers</bf>,
+	<bf>GET</bf> parameters, <bf>regular expressions</bf>, build local
+        URLs or to choose a different stylesheet based on any of those
+        paramters.</listitem>
       <listitem>fetch stylesheets or external entities from other
-      	<bf>dynamic pages</bf>, http or ftp urls without creating the potential 
-	of deadlocks and <bf>avoiding most of the dangerous conditions</bf></listitem>
-      <listitem>set the <bf>mime type</bf> of the transformation result as
-      	told by the xslt</listitem>
-      <listitem>let the xslt access <bf>GET parameters</bf> or   
-      	<bf>modify the headers</bf> returned back to the browser</listitem>
+      	<bf>dynamic pages</bf>, http or ftp urls if you are so inclined.</listitem>
+      <listitem>manipulate returned headers from the xsl stylesheet,
+        and set the <bf>mime type</bf> of the transformation result.</listitem>
+      <listitem>parse external <bf>DTDs</bf> and use the defaults
+      	provided.</listitem>
       <listitem>provide a set of <bf>standard compliant</bf> functions 
-        allowing you to keep your xslt or xml files <bf>compatible</bf>
-	with any xslt processor, even when using <bf>mod-xslt2</bf> enhanced
-	features</listitem>
+        allowing you to keep your xsl or xml files <bf>compatible</bf>
+	with any other xsl processor, even when using <bf>mod-xslt</bf> enhanced
+	features.</listitem>
     </itemizedlist>
-    At time of writing, <bf>mod-xslt</bf> works with most versions of
-    <bf>apache</bf>, and provides an <bf>API</bf> that should make it easy to
-    port to <bf>any other web server</bf>.
+
+    <bf>mod-xslt</bf> works with most versions of <bf>apache</bf>, and
+    provides an <bf>API</bf> that should make it easy to port to <bf>any
+    other web server</bf>.
   </para>
 </article>	

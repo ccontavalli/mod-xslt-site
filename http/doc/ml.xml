@@ -25,40 +25,32 @@
   </articleinfo>
 
   <para>                                                 
-  Any question about mod-xslt? Problems using mod-xslt?
-  Would you like to know more about the future of mod-xslt?
-  Or you have any feature you would like in mod-xslt?
-  </para>
-
-  <para>
-  You can join or just post questions on the mod-xslt mailing
-  list.
+  Any question about mod-xslt? Problems? Would you like to know more about what
+  the future holds? Any feature you would like to have? Join the mailing list.
   </para>
 
   <para>
   The mailing list is currently hosted on google groups:
   <itemizedlist>
     <listitem><para>
-    if you have a gmail or other google account, you can
-    subscribe from:</para>
+    use gmail or other google account? subscribe from:</para>
     <para><bf><ulink url="http://groups.google.com/group/mod-xslt/subscribe" /></bf>.
     </para></listitem>
 
     <listitem><para>
-    if you don't have a google account, you can create one for you by
-    visiting:
+    are you ok with registering with google? start from:
     </para><para><bf><ulink url="https://accounts.google.com/NewAccount"/></bf></para>
     <para>
-    Note
-    that you can create an account and subscribe with your own email address,
-    you don't need gmail. The account is used so you have a username and
+    Remember that you don't need to create a new gamil account if you
+    don't want to, you can still use your normal mailbox.
+    The account is used so you have a username and
     password to access the web interface, change your settings, or post
-    via web, like any mailman, sympa or listar mailing list.
+    via web, like with mailman, sympa or any other mailing list.
     </para></listitem>
 
     <listitem><para>
-    If you don't want a google account, or prefer to do this over email,
-    you can send an email to: <bf>mod-xslt+subscribe@googlegroups.com</bf>.
+    don't want a google account? prefer to do this over email?
+    send an email to: <bf><ulink url="mailto:mod-xslt+subscribe@googlegroups.com">mailto:mod-xslt+subscribe@googlegroups.com</ulink></bf>.
     </para></listitem>
 
     <listitem><para>
@@ -75,6 +67,6 @@
 
   <para>
   If you want to contribute code, feature, bugfixes, ... the mailing
-  list is also the right place where to start.
+  list is the right place where to start.
   </para>
 </article>	

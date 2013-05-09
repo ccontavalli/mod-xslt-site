@@ -37,31 +37,38 @@
   </articleinfo>
 
   <para>                                                 
-    This site is a proof of concept of mod-xslt usage.
-    It has been entirely written in .xml + .xsl and is being 
-    served by apache using mod-xslt.
+    This site is a proof of concept of mod-xslt usage. All the content
+    has been written in xml using a subset of the docbook attributes,
+    sdope. The feel of the web site is provided by a set of
+    <ulink url="https://github.com/ccontavalli/mod-xslt-site/tree/master/lib/xslt">simple
+    xsl stylesheets</ulink> and
+    <ulink url="https://github.com/ccontavalli/mod-xslt-site/blob/master/lib/xslt/skel.xml">xml
+    configurations</ulink> which are applied on the fly by mod-xslt.
   </para> 
 
   <para>
-    All the .xsl files and .xml files are released under GPL.
-    You can download them from:
-    <ulink url="https://github.com/ccontavalli/mod-xslt-site" />
+    You can learn more about this web site by looking at 
+    <ulink url="https://github.com/ccontavalli/mod-xslt-site">the source
+    code</ulink>, released under the terms of the GPL license.
   </para>
 
   <para>
-    Feel free to use the mailing list if you have questions, or
-    to modify and use those templates as you see fit.
+    If you have questions about the stylesheets or how to use them,
+    please <ulink ulr="http://www.modxslt.org/doc/ml.xml">use the mailing list</ulink>.
   </para>
 
   <para>
-    Over the past few years, this set of templates was used to
-    build several sites, some of which are:
+    Over the past few years, this same set of xsl stylesheet was used to
+    build several other sites, some of which are:
   </para>
   <para>
     <itemizedlist>
-    <listitem><bf><ulink url="http://www.masobit.net" /></bf><para>Masobit Corp SRL</para></listitem>
-    <listitem><bf><ulink url="http://www.mod-xslt2.com" /></bf><para>mod-xslt2 web site</para></listitem>
     <listitem><bf><ulink url="http://www.pigeonair.net" /></bf><para>Pigeonair Mail System</para></listitem>
+    <listitem><bf><ulink url="http://www.masobit.net" /></bf><para>Masobit Corp SRL</para></listitem>
     </itemizedlist>
   </para>
-</article>	
+  <para>
+    Getting started is pretty easy: fill in the .xml files, write your content,
+    and if you want, personalize the stylesheets.
+  </para>
+</article>
