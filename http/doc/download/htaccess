@@ -1,0 +1,4 @@
+<IfModule modxslt.c>
+  RemoveOutputFilter xml
+</IfModule>
+Header set Content-Disposition attachment
