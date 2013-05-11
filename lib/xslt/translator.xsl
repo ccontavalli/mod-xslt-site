@@ -6,6 +6,7 @@
     xmlns:mxslt="http://www.mod-xslt2.com/ns/1.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:s="http://www.masobit.net/ns/site/1.0"
+    xmlns:e="http://xmlsoft.org/XSLT/namespace"
     xmlns="http://www.w3.org/TR/rec-html40">
 
 <xsl:import href="site/sdope.xsl" /> 

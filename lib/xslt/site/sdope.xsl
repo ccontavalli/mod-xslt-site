@@ -5,7 +5,8 @@
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	xmlns:db="http://www.masobit.net/ns/sdope/1.0"
 	xmlns:s="http://www.masobit.net/ns/site/1.0"
-	xmlns="http://www.w3.org/TR/rec-html40">
+	xmlns="http://www.w3.org/TR/rec-html40"
+        exclude-result-prefixes="db">
 
 <xsl:import href="../sdope/docbook.xsl" />
 

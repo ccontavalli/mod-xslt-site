@@ -3,7 +3,8 @@
 <xsl:stylesheet version="1.0" 
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:db="http://www.masobit.net/ns/sdope/1.0"
-  xmlns="http://www.w3.org/TR/rec-html40">
+  xmlns="http://www.w3.org/TR/rec-html40"
+  exclude-result-prefixes="db">
 
 <xsl:output method="html" 
 	    omit-xml-declaration="yes" 
