@@ -13,6 +13,12 @@
 
 <articleinfo>
   <title>About this site</title>  
+    <keywordset>
+      <keyword>license</keyword>
+      <keyword>GPL</keyword>
+      <keyword>mod-xslt</keyword>
+    </keywordset>
+ 
   <author>
     <firstname>Carlo</firstname>
     <surname>Contavalli</surname>

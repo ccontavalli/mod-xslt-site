@@ -261,6 +261,9 @@
 </xsl:template>
 
 
+<xsl:template match="s:title">
+  FAQ, Frequently Asked Questions
+</xsl:template>
 
 <xsl:template match="s:right">
   <xsl:param name="class">faq-index<xsl:value-of select="count(ancestor-or-self::faq:sect)" /></xsl:param>

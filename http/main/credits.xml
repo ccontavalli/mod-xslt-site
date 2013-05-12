@@ -4,14 +4,24 @@
 <?xml-stylesheet type="text/xsl" method="http" href="xslt/sdope/docbook.xsl"
 	media="screen" alternate="no" title="For any web browser" charset="ISO-8859-1"?>
 
-<!--
-   mod-xslt - Copyright (C) 2002, 2003 Carlo Contavalli 
- 			 <ccontavalli at masobit.net> -->
-
 
 <article xmlns="http://www.masobit.net/ns/sdope/1.0">
   <articleinfo>
-    <title>Credits</title>
+    <title>Credits and contributions</title>
+
+    <keywordset>
+      <keyword>xml</keyword>
+      <keyword>xsl</keyword>
+      <keyword>xslt</keyword>
+      <keyword>transformation</keyword>
+      <keyword>apache</keyword>
+      <keyword>stylesheet</keyword>
+      <keyword>libxslt</keyword>
+      <keyword>libxml</keyword>
+      <keyword>credits</keyword>
+      <keyword>contributions</keyword>
+      <keyword>history</keyword>
+    </keywordset>
 
     <author>
       <firstname>Carlo</firstname>

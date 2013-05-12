@@ -26,18 +26,48 @@
 <xsl:param name="realDocument" select="child::*" />
 
 <xsl:template match="/">
-  <xsl:choose>
+  <xsl:apply-templates select="document('skel.xml')/s:page" />
+</xsl:template>
 
-    <xsl:when test="element-available('mxslt:value-of')">
-      <xsl:apply-templates select="document('skel.xml')/s:page">
-      </xsl:apply-templates>
-    </xsl:when>
+<xsl:template match="s:title">
+  <title>
+    <xsl:apply-templates /> - <xsl:apply-imports />
+  </title>
+</xsl:template>
 
-    <xsl:otherwise>
-      <xsl:apply-templates select="document('skel.xml')/s:page" />
-    </xsl:otherwise>
+<xsl:template match="s:lang" />
 
-  </xsl:choose>
+<xsl:template match="s:page">
+  <html>
+    <xsl:attribute name="lang">
+      <xsl:value-of select="s:header/s:lang" />
+    </xsl:attribute>
+    <head>
+      <meta name="robots" content="index,follow" />
+
+      <xsl:apply-templates select="s:header" />
+
+      <link rel="stylesheet" type="text/css">
+        <xsl:attribute name="href"><xsl:value-of select="$httpRoot" />/css/modules.css</xsl:attribute>
+      </link>
+    </head>
+
+    <body class="site"> 
+      <xsl:apply-templates select="s:section" />
+
+      <script>
+      <![CDATA[ 
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40501108-1', 'modxslt.org');
+  ga('send', 'pageview');
+      ]]> 
+      </script>
+    </body>
+  </html>
 </xsl:template>
 
 <xsl:template match="s:right">
@@ -84,16 +114,6 @@
 </xsl:template>
 
 <xsl:template match="s:section">
-  <html>
-    <head>
-      <meta name="robots" content="index,follow" />
-      <title><xsl:value-of select="@title" /></title>
-      <link rel="stylesheet" type="text/css">
-        <xsl:attribute name="href"><xsl:value-of select="$httpRoot" />/css/modules.css</xsl:attribute>
-      </link>
-    </head>
-
-    <body class="site"> 
       <table width="760" height="38" border="0" cellpadding="0" cellspacing="0">
           <!-- White spacer, between first row and body -->
         <tr><td height="2" /></tr>
@@ -178,20 +198,6 @@
           </table>
         </td></tr>
       </table>
-
-      <script>
-      <![CDATA[ 
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-40501108-1', 'modxslt.org');
-  ga('send', 'pageview');
-      ]]> 
-      </script>
-    </body>
-  </html>
 </xsl:template>
 
 <xsl:template match="s:nav[@label='section']">

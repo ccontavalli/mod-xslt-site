@@ -6,10 +6,21 @@
 	
 <article xmlns="http://www.masobit.net/ns/sdope/1.0">
   <articleinfo>
-    <title>mod-xslt -- Older versions</title>
+    <title>Historic archive</title>
     <abstract><para>
     This page contains old version of mod-xslt snapshots and releases.
     </para></abstract>
+
+    <keywordset>
+      <keyword>xml</keyword>
+      <keyword>xslt</keyword>
+      <keyword>libxml</keyword>
+      <keyword>xsl</keyword>
+      <keyword>apache</keyword>
+      <keyword>transformation</keyword>
+      <keyword>software</keyword>
+      <keyword>release</keyword>
+    </keywordset>
   </articleinfo>
 
 <repository xmlns="http://www.masobit.net/ns/repository/1.0">

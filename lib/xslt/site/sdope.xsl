@@ -13,6 +13,7 @@
   <!-- Override standard docbook processing -->
 <xsl:template name="index" /> 
 <xsl:template match="db:author" /> 
+<xsl:template match="db:keywordset" /> 
 
   <!-- Main body template -->
 <xsl:template match="db:article|db:Article|db:ARTICLE">
@@ -59,7 +60,7 @@
   </xsl:choose>
 </xsl:template>
 
-<!-- Inizio index destra -->
+<!-- Start of right index -->
 
 <xsl:template name="sideindex">
   <xsl:apply-templates select="$realDocument/db:sect|$realDocument/db:Sect|$realDocument/db:Sect1" mode="index" />
@@ -102,8 +103,7 @@
     </xsl:if>
   </td></tr></table>
 </xsl:template>
-<!-- Fine index destra -->
-
+<!-- end of right index -->
 
 <xsl:template name="navbar">
   <xsl:param name="display" />
@@ -176,6 +176,17 @@
     </td></tr> 
     <tr><td height="10"></td></tr>
   </table>
+</xsl:template>
+
+<xsl:template match="s:title">
+  <xsl:value-of select="$realDocument//db:title|$realDocument//db:Title" />
+</xsl:template>
+
+<xsl:template match="s:header">
+  <xsl:apply-templates />
+  <meta name="keywords">
+    <xsl:attribute name="content"><xsl:for-each select="$realDocument//db:keyword" xml:space="preserve"><xsl:value-of select="." /> </xsl:for-each></xsl:attribute>
+  </meta>
 </xsl:template>
 
 <xsl:template match="s:right">

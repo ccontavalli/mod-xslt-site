@@ -21,6 +21,17 @@
   <articleinfo>
     <title>About this site</title>  
 
+    <keywordset>
+      <keyword>xml</keyword>
+      <keyword>xslt</keyword>
+      <keyword>libxml</keyword>
+      <keyword>xsl</keyword>
+      <keyword>apache</keyword>
+      <keyword>transformation</keyword>
+      <keyword>about</keyword>
+      <keyword>html</keyword>
+    </keywordset>
+
   <author>
     <firstname>Carlo</firstname>
     <surname>Contavalli</surname>

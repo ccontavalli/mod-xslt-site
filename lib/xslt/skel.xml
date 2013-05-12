@@ -4,7 +4,11 @@
   alternate="no" title="For any web browser" charset="ISO-8859-1"?>
 
 <page type="index" xmlns="http://www.masobit.net/ns/site/1.0">  
-  <section title="mod-xslt" lang="en-us">
+  <header>
+    <title>mod-xslt</title>
+    <lang>en-US</lang>
+  </header>
+  <section>
     <nav label="section" title="HOME" />
 
     <nav label="up" >

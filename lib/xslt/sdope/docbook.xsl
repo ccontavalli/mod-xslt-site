@@ -24,7 +24,7 @@
 <xsl:template match="/">
   <html>
     <head>
-      <title><xsl:value-of select="/db:article/db:articleinfo/db:title" /></title>
+      <title><xsl:value-of select="db:title|db:Title" /></title>
       <link href="xslt/docbook.css" rel="stylesheet" type="text/css"/>
     </head>
 
