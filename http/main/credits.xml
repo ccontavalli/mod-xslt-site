@@ -34,9 +34,8 @@
     </author>
 
     <abstract><para>
-    Many people contributed to the development of mod-xslt2
-    as it is today. Purpose of this page is to thank those 
-    people for the time they spent on mod-xslt2.
+    Learn about the history of mod-xslt and the people who, over time, contributed
+    to the creation of a server side xsl transformation engine for apache.
     </para></abstract>
   </articleinfo>
 

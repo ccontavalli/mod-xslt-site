@@ -37,14 +37,15 @@
       </address>
     </affiliation>
   </author> 
-  </articleinfo>
 
-  <para>                                                 
-    <bf>mod-xslt</bf> is a server side module able to apply xsl stylesheets
-    to xml data on the fly. <bf>mod-xslt</bf> is <bf>Free Software</bf> and
+  <abstract><para>                                                 
+    <bf>mod-xslt</bf> is a server side module able to transform xml documents
+    by applying xsl stylesheets on the fly.
+    <bf>mod-xslt</bf> is <bf>Free Software</bf> and
     is released under the terms of the <bf>GPL</bf>.
     Anybody is welcome to join its development.
-  </para> 
+  </para></abstract>
+  </articleinfo>
 
   <para>
     <bf>mod-xslt</bf> can:

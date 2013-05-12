@@ -42,15 +42,15 @@
     </affiliation>
   </author> 
 
-<!--  <abstract><para>
-....................
-  </para></abstract> -->
+  <abstract><para>
+  This site is written in xml, using a subset of docbook, a few xsl
+  stylesheets, and mod-xslt to transform the xml pages into html.
+  </para></abstract>
+
   </articleinfo>
 
   <para>                                                 
-    This site is a proof of concept of mod-xslt usage. All the content
-    has been written in xml using a subset of the docbook attributes,
-    sdope. The feel of the web site is provided by a set of
+    The feel of the web site is provided by a set of
     <ulink url="https://github.com/ccontavalli/mod-xslt-site/tree/master/lib/xslt">simple
     xsl stylesheets</ulink> and
     <ulink url="https://github.com/ccontavalli/mod-xslt-site/blob/master/lib/xslt/skel.xml">xml

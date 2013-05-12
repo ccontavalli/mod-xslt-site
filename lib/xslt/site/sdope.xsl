@@ -187,6 +187,11 @@
   <meta name="keywords">
     <xsl:attribute name="content"><xsl:for-each select="$realDocument//db:keyword" xml:space="preserve"><xsl:value-of select="." /> </xsl:for-each></xsl:attribute>
   </meta>
+  <xsl:if test="$realDocument//db:abstract">
+    <meta name="description">
+      <xsl:attribute name="content"><xsl:value-of select="normalize-space($realDocument//db:abstract)" /></xsl:attribute>
+    </meta>
+  </xsl:if>
 </xsl:template>
 
 <xsl:template match="s:right">

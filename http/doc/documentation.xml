@@ -8,10 +8,9 @@
   <articleinfo>
     <title>Documentation Download</title>
     <abstract><para>
-    This page contains the latest version of mod-xslt documentation
-    in various formats. You can browse the documentation online or download 
-    it on your PC. Keep also in mind that documentation
-    is provided in all .tar.gz packages. You can also browse the <ulink url="download/">whole directory</ulink>.
+    Want to learn more about mod-xslt? The server side engine to transform xml pages into
+    html by using xsl stylesheets? You can browse or download the documentation here.
+    Also, don't forget  <ulink url="http://github.com/ccontavalli/mod-xslt/wiki">about the wiki</ulink>.
     </para></abstract>
   </articleinfo>
 

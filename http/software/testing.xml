@@ -7,11 +7,6 @@
 <article xmlns="http://www.masobit.net/ns/sdope/1.0">
   <articleinfo>
     <title>Testing Suite</title>
-    <abstract><para>
-    This page contains the latest snapshots of mod-xslt testing suite,
-    scripts used to perform regression tests over new releases of mod-xslt.
-    </para></abstract>
-
     <keywordset>
       <keyword>xml</keyword>
       <keyword>xslt</keyword>
@@ -22,6 +17,14 @@
       <keyword>testing</keyword>
       <keyword>suite</keyword>
     </keywordset>
+
+    <abstract><para>
+    This page contains the latest snapshots of mod-xslt testing suite,
+    scripts used to perform regression tests over new releases of mod-xslt.
+    The suites configures apache and verifies correct
+  parsing and transformation of xml pages into html using xsl stylesheets
+  and mod-xslt.
+    </para></abstract>
   </articleinfo>
 
 <repository xmlns="http://www.masobit.net/ns/repository/1.0">

@@ -21,6 +21,12 @@
       <keyword>software</keyword>
       <keyword>release</keyword>
     </keywordset>
+
+  <abstract><para>
+  The history of mod-xslt starts some time in 2002. On this page you can
+  find versions of mod-xslt that pre-date the migration to github, some
+  time in 2012.
+  </para></abstract>
   </articleinfo>
 
 <repository xmlns="http://www.masobit.net/ns/repository/1.0">

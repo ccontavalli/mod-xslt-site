@@ -32,6 +32,11 @@
       <keyword>w3c</keyword>
     </keywordset>
 
+  <abstract><para>
+  mod-xslt uses libxslt and standard xml processing libraries to transform
+  xml into html pages by using xsl stylesheets. This page provides links
+  to standards useful to better understand xml and xsl. 
+  </para></abstract>
 </articleinfo>
 
   <para>  

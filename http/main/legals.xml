@@ -29,9 +29,10 @@
     </affiliation>
   </author> 
 
-<!--  <abstract><para>
-....................
-  </para></abstract> -->
+  <abstract><para>
+  mod-xslt is released under the terms of the GNU GPL, while the material
+  on this site is protected under the terms of the GNU Free Documentation License.
+  </para></abstract>
 </articleinfo>
 
   <para>  
