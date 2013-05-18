@@ -262,7 +262,10 @@
 
 
 <xsl:template match="s:title">
-  FAQ, Frequently Asked Questions
+  <xsl:choose>
+    <xsl:when test="$realDocument/faq:content">FAQ, Frequently Asked Questions</xsl:when>
+    <xsl:otherwise><xsl:apply-imports /></xsl:otherwise>
+  </xsl:choose>
 </xsl:template>
 
 <xsl:template match="s:right">
